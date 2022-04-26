@@ -1,0 +1,207 @@
+{
+    "uuid": "1d02738f-7c99-42ba-a6da-3d1b97261523",
+    "modified": "2015-07-01T14:11:20Z",
+    "created": "2015-07-01T14:00:02Z",
+    "status": "withheld",
+    "title": "Proin eget dignissim ipsum",
+    "type": "x-im/article",
+    "properties": [
+      {"name":"subtype", "value":"x-im/print"},
+      {"name":"haspublishedversion", "value":"true"}
+    ],
+    "uri": "im://article/1d02738f-7c99-42ba-a6da-3d1b97261523",
+    "url": "http://example.org/articles/1d02738f-7c99-42ba-a6da-3d1b97261523.xml",
+    "published": "2015-07-01T14:27:00+02:00",
+    "unpublished": "2015-10-05T15:14:13+02:00",
+    "language": "sv",
+    "products": [
+      "ddse",
+      "test"
+    ],
+    "links": [
+      {
+        "title": "Quisque pharetra id velit quis commodo",
+        "rel": "article", "type": "x-im/article",
+        "uuid": "2175C4BB-FDCC-5A52-BC3B-658562F554CF"
+      },
+      {
+        "rel":"alternate", "type":"x-im/article", "uuid":"A0836ECC-1D4A-4CE0-B5DC-7D06BA853759"
+      },
+      {
+        "rel":"creator", "type":"x-imid/user", "uri":"imid://user/sub/znY7U3CO134n26zv9gb44_jCzSp"
+      },
+      {
+        "rel":"updater", "type":"x-imid/user", "uri":"imid://user/sub/znY7U3CO134n26zv9gb44_jCzSp"
+      },
+      {
+        "title": "Premium", "rel": "mainchannel", "type": "x-im/channel",
+        "uuid": "a0836ecc-1d4a-4ce0-b5dc-7d06ba853759"
+      },
+      {
+        "title": "dd.se", "rel": "channel", "type": "x-im/channel", 
+        "uuid": "BC2798FA-12FF-11E8-96D9-0ED5F89F718B"
+      },
+      {
+        "title": "John Doe", "rel": "author", "type": "x-im/author",
+        "uuid": "9e1653f3-7575-4cb7-9b74-dc4dea63513e",
+        "uri": "im://user/58456",
+        "data": {
+          "email": "john.doe@example.org"
+        }
+      },
+      {
+        "title": "Jane Doe", "rel": "author", "type": "x-im/author",
+        "uuid": "BAD4314C-7E33-11E5-8BCF-FEFF819CDC9F", "uri": "im://user/58456",
+        "links": [
+          {
+            "rel":"avatar", "type":"x-im/image", "uuid":"9c188460-c500-11e5-9912-ba0be0483c18",
+            "uri":"im://image/janedoe.jpeg"
+        }
+        ]
+      },
+      { "rel": "contributor", "uri": "some-ns-pls://MKT" },
+      { "rel": "alternate", "uri": "name-of-ext-system://1234456" },
+      {
+        "rel": "articlesource", "title": "Online", "type": "x-im/articlesource",
+        "uri": "im://articlesource/online"
+      }
+    ],
+    "meta": [
+      {
+        "id": "8400c74d665x", "type": "x-im/newsvalue",
+        "data": {
+          "score": "1",
+          "description": "6H",
+          "text": "PT6H",
+          "duration": "3600",
+          "format": "lifetimecode",
+          "end":"2016-01-31T10:00:00.000+01:00"
+        }
+      },
+      { 
+        "id":"9076h25e322y", "type": "x-im/print-meta",
+        "data": {
+          "firstPagin": "2",
+          "multiPageCount": "2",
+          "part": "A",
+          "publicationDate": "2017-11-28",
+          "publicationDateName": "29.11.2017",
+          "originalArticleNewspilotID": "112233",
+          "originalArticleNewspilotGUID": "dfec478e-0014-4948-afb7-08fe0038307a",
+          "newspilotJobId": "2211"
+        }
+      },
+      {
+        "id": "8400c74d667e", "type": "x-im/teaser",
+        "title": "Sed sit amet turpis a purus fringilla",
+        "data" : {
+          "subject": "In sodales lectus vel egestas rhoncus",
+          "text": "Duis eget magna lacus. In sodales lectus vel egestas rhoncus. Fusce ultrices urna vel ante sodales tincidunt. Maecenas at nisl in lorem egestas egestas id sed ipsum. Sed aliquam gravida dolor."
+        },
+        "links": [
+          {
+            "rel": "image", "type": "x-im/image",
+            "uri": "im://image/znX8U1CU124n26zu7gb40_jBzSk.jpeg",
+            "uuid": "c382c937-8511-5d48-9677-55658c2bbb32",
+            "data": {
+              "width": "1536",
+              "height": "1024"
+            }
+          }
+        ]
+      }
+    ],
+    "content": [
+        {
+        "id": "d0dbf67d385e", "type": "x-im/header",
+        "data": {"text": "Lorem ipsum dolor sit"}
+      },
+      {
+        "id": "8a5ef068ef17", "type": "x-im/subheading?",
+        "data": {
+          "format": "html",
+          "text": "New York"
+        }
+      },
+      {
+        "id": "8a5ef068ef18", "type": "leadin",
+        "data": {
+          "format": "html",
+          "text": "Quisque dignissim molestie tellus"
+        }
+      },
+        {
+        "id": "fafbedf02da1", "type": "x-im/paragraph",
+        "data": {
+          "format": "html",
+          "text": "Mauris eleifend, <a href=\"http://google.com\" id=\"link-5399cd1a1d7c8336c2c2203f2be1cb94\" title=\"\">Bacon </a> orci nec volutpat efficitur massa."
+        }
+      },
+      {
+        "id": "8a5ef068ef15", "type": "x-im/paragraph",
+        "data": {
+          "format": "html",
+          "text": "In hac habitasse platea dictumst"
+        }
+      },
+          {
+        "id": "dcc7c5fcf709", "type": "x-im/image",
+        "uuid": "f845d7b8-40cb-545a-8069-36e21ff00908",
+        "links": [
+          {
+            "rel": "self", "type": "x-im/image",
+            "uri": "im://image/znX8U1C123JLDjlksdfgb40_jIka.jpeg",
+            "uuid": "f845d7b8-40cb-545a-8069-36e21ff00908",
+            "data": {
+          "text": "Vivamus luctus eros.",
+              "width": "3560",
+              "height": "2695",
+              "alignment": "auto"
+            },
+            "links": [
+              {
+                "rel": "author", "type": "x-im/author",
+                "uuid": "bad4314c-7e33-11e5-8bcf-feff819cdc9f",
+                "title": "Jane Doe"
+          },
+          {
+                "rel": "crop", "title": "16:9", "type": "x-im/crop",
+                "uri": "im://crop/0.07865168539325842/0.0899/0.8426966292134831/0.9899"
+          },
+              {
+                "rel": "crop", "title": "1:1", "type": "x-im/crop",
+                "uri": "im://crop/0.24/0.20786516853932585/0.44/0.6591760299625468"
+          }
+            ]
+          },
+          { "rel": "source", "type": "x-xyz/image", "uri": "xyz://image/2345836363" }
+        ]
+      },
+      {
+        "id": "MTU0LDE0MywyMTQsMTgw", "type": "x-im/content-part",
+        "title": "Vivamus vitae gravida",
+        "data": {
+          "subject": "Fact"
+        },
+        "content": [
+          {
+          "id": "paragraph-f6f5d97f5c8d6cd4977981ee4e609985", "type":"x-im/paragraph",
+              "data": {
+            "text": "<strong id=\"strong-88285daa39e05cb9bffd601c1e72322e\">Quisque ac</strong>",
+            "format": "html"
+              }
+          },
+          {
+            "id": "paragraph-abb247cabe3778f5296f3b65aa3c3cbb", "type": "x-im/paragraph",
+            "data": {
+          "text": "Etiam <em id=\"emphasis-8734116999568b91e80e5c4e0453e117\">interdum idmassa sed ullamcorper.</em>"
+            }
+          }
+        ],
+        "links": [
+          {"rel": "type", "type": "x-im/fact-1", "title": "Faktaruta"}
+        ]
+      }
+    ]
+  }
+  

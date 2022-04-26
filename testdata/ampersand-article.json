@@ -1,0 +1,57 @@
+{
+  "uuid": "8706660e-06d2-4ebe-bc3a-6c17cbfb6179",
+  "uri": "im://article/8706660e-06d2-4ebe-bc3a-6c17cbfb6179",
+  "title": "some title",
+  "type": "x-im/article",
+  "created": "2017-02-22T08:12:40Z",
+  "modified": "2017-02-22T10:37:23Z",
+  "published": "2017-02-22T09:22:07+01:00",
+  "content": [
+    {
+      "id": "MTk4LDIwMyw4NiwxOTU",
+      "uuid": "246fc606-64ce-53ff-b1e9-d813c9680f3a",
+      "type": "x-im/image",
+      "links": [
+        {
+          "uuid": "246fc606-64ce-53ff-b1e9-d813c9680f3a",
+          "uri": "im://image/0SC2BIoacGclDU0mYZ7o3C3xpxc.jpg",
+          "type": "x-im/image",
+          "data": {
+            "credit": "",
+            "height": "1000",
+            "imageInstructions": "",
+            "text": "text &amp; <strong>text</strong>",
+            "width": "1000"
+          },
+          "rel": "self",
+          "links": [
+            {
+              "uri": "im://crop/0.30375/0.08875/0.3625/0.20125",
+              "type": "x-im/crop",
+              "title": "16:9",
+              "rel": "crop"
+            },
+            {
+              "uri": "im://crop/0.085/0.0075/0.8075/0.50375",
+              "type": "x-im/crop",
+              "title": "8:5",
+              "rel": "crop"
+            },
+            {
+              "uri": "im://crop/0.24375/0.03375/0.485/0.36125",
+              "type": "x-im/crop",
+              "title": "4:3",
+              "rel": "crop"
+            },
+            {
+              "uri": "im://crop/0.345/0.0325/0.2875/0.2875",
+              "type": "x-im/crop",
+              "title": "1:1",
+              "rel": "crop"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

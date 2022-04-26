@@ -1,0 +1,129 @@
+<newsItem conformance="power" guid="1d02738f-7c99-42ba-a6da-3d1b97261523" standard="NewsML-G2" standardversion="2.26"
+          version="1" xmlns="http://iptc.org/std/nar/2006-10-01/">
+    <catalogRef href="http://www.iptc.org/std/catalog/catalog.IPTC-G2-Standards_30.xml"></catalogRef>
+    <catalogRef href="http://infomaker.se/spec/catalog/catalog.infomaker.g2.1_0.xml"></catalogRef>
+    <itemMeta>
+        <versionCreated>2015-07-01T14:11:20Z</versionCreated>
+        <firstCreated>2015-07-01T14:00:02Z</firstCreated>
+        <itemClass qcode="ninat:text"></itemClass>
+        <provider literal="John Doe"></provider>
+        <pubStatus qcode="stat:withheld"></pubStatus>
+        <title>Proin eget dignissim ipsum</title>
+        <links xmlns="http://www.infomaker.se/newsml/1.0">
+            <link rel="article" title="Quisque pharetra id velit quis commodo" type="x-im/article"
+                  uuid="2175c4bb-fdcc-5a52-bc3b-658562f554cf"></link>
+            <link rel="alternate" type="x-im/article" uuid="a0836ecc-1d4a-4ce0-b5dc-7d06ba853759"></link>
+            <link rel="creator" type="x-imid/user" uri="imid://user/sub/znY7U3CO134n26zv9gb44_jCzSp"></link>
+            <link rel="updater" type="x-imid/user" uri="imid://user/sub/znY7U3CO134n26zv9gb44_jCzSp"></link>
+            <link rel="mainchannel" title="Premium" type="x-im/channel"
+                  uuid="a0836ecc-1d4a-4ce0-b5dc-7d06ba853759"></link>
+            <link rel="channel" title="dd.se" type="x-im/channel" uuid="bc2798fa-12ff-11e8-96d9-0ed5f89f718b"></link>
+            <link rel="author" title="John Doe" type="x-im/author" uri="im://user/58456"
+                  uuid="9e1653f3-7575-4cb7-9b74-dc4dea63513e">
+                <data>
+                    <email>john.doe@example.org</email>
+                </data>
+            </link>
+            <link rel="author" title="Jane Doe" type="x-im/author" uri="im://user/58456"
+                  uuid="bad4314c-7e33-11e5-8bcf-feff819cdc9f">
+                <links>
+                    <link rel="avatar" type="x-im/image" uri="im://image/janedoe.jpeg"
+                          uuid="9c188460-c500-11e5-9912-ba0be0483c18"></link>
+                </links>
+            </link>
+        </links>
+        <edNote>Duis eget magna lacus. In sodales lectus vel egestas rhoncus</edNote>
+        <edNote>According to the standard there can be multiple edNotes.</edNote>
+        <itemMetaExtProperty type="imext:haspublishedversion" value="true"></itemMetaExtProperty>
+        <itemMetaExtProperty type="imext:pubstart" value="2015-07-01T12:27:00Z"></itemMetaExtProperty>
+        <itemMetaExtProperty type="imext:subtype" value="x-im/print" creator="app:newspilot"></itemMetaExtProperty>
+        <itemMetaExtProperty type="imext:type" value="x-im/article"></itemMetaExtProperty>
+        <itemMetaExtProperty type="imext:uri"
+                             value="im://article/1d02738f-7c99-42ba-a6da-3d1b97261523"></itemMetaExtProperty>
+        <itemMetaExtProperty type="imext:url"
+                             value="http://example.org/articles/1d02738f-7c99-42ba-a6da-3d1b97261523.xml"></itemMetaExtProperty>
+        <service qcode="imsection:debatt">
+            <name>Debatt</name>
+        </service>
+        <service qcode="imchn:ddse"></service>
+        <service qcode="imchn:test"></service>
+        <service qcode="custom:qcode"></service>
+        <service qcode="custom-qcode"></service>
+
+    </itemMeta>
+    <contentMeta>
+        <contentCreated>2015-07-01T14:00:02Z</contentCreated>
+        <contentModified>2015-07-01T14:11:20Z</contentModified>
+        <infoSource>MKT</infoSource>
+        <altId>1234456</altId>
+        <slugline>Praesent nisl risus, lobortis sed congue at...</slugline>
+        <by>Jane Doe</by>
+        <description>Quisque ullamcorper non ligula vel commodo.</description>
+        <metadata xmlns="http://www.infomaker.se/newsml/1.0">
+            <object id="MTU2LDIzOSwxMzgsMjM5" type="x-im/teaser" title="Teaser headline">
+                <data>
+                    <text format="idf">
+                        <element id="paragraph-f0e6565ec093ab802cb64033b853244a" type="body">Line one</element>
+                        <element id="paragraph-09c9dbfdf4a9ebd1977157ccd98ffd6b" type="body">Line two</element>
+                    </text>
+                    <title>Teaser headline</title>
+                </data>
+            </object>
+        </metadata>
+        <links xmlns="http://www.infomaker.se/newsml/1.0">
+            <link rel="articlesource" title="Online" type="x-im/articlesource" uri="im://articlesource/online"></link>
+        </links>
+    </contentMeta>
+    <contentSet>
+        <inlineXML>
+            <idf xml:lang="sv-SE" dir="ltr" xmlns="http://www.infomaker.se/idf/1.0">
+                <group type="body">
+                    <element id="d0dbf67d385e" type="headline">Lorem ipsum dolor sit</element>
+                    <element id="fafbedf02da1" type="body" format="html">Mauris eleifend, <a
+                            href="http://google.com" id="link-5399cd1a1d7c8336c2c2203f2be1cb94"
+                            title="">Bacon
+                    </a> orci nec volutpat efficitur massa.
+                    </element>
+                    <object id="iframely-f79e0901d1e0d97b4dc2c163397e6c4f" type="x-im/iframely"
+                            url="https://twitter.com/infomakernews/status/910422014271348736">
+                        <data>
+                            <embedCode><![CDATA[<blockquote class="twitter-tweet" align="center">
+<p lang="sv" dir="ltr">Igår kväll hittade vi på hyss tillsammans med <a href="https://twitter.com/hashtag/wilsoncreative?src=hash&amp;ref_src=twsrc%5Etfw">#wilsoncreative</a>, team <a href="https://twitter.com/WilsonHasse?ref_src=twsrc%5Etfw">@WilsonHasse</a> och co. Stay tuned för det färdiga resultatet! <a href="https://twitter.com/hashtag/ePaper?src=hash&amp;ref_src=twsrc%5Etfw">#ePaper</a> <a href="https://t.co/qSFK03tmMu">pic.twitter.com/qSFK03tmMu</a>
+</p>&mdash; Infomaker (@infomakernews) <a href="https://twitter.com/infomakernews/status/910422014271348736?ref_src=twsrc%5Etfw">September 20, 2017</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8">
+</script>
+]]>&#129440;<![CDATA[ <blockquote class="twitter-tweet" align="center">
+<p lang="sv" dir="ltr">Igår kväll hittade vi på hyss tillsammans med <a href="https://twitter.com/hashtag/wilsoncreative?src=hash&amp;ref_src=twsrc%5Etfw">#wilsoncreative</a>, team <a href="https://twitter.com/WilsonHasse?ref_src=twsrc%5Etfw">@WilsonHasse</a> och co. Stay tuned för det färdiga resultatet! <a href="https://twitter.com/hashtag/ePaper?src=hash&amp;ref_src=twsrc%5Etfw">#ePaper</a> <a href="https://t.co/qSFK03tmMu">pic.twitter.com/qSFK03tmMu</a>
+</p>&mdash; Infomaker (@infomakernews) <a href="https://twitter.com/infomakernews/status/910422014271348736?ref_src=twsrc%5Etfw">September 20, 2017</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8">
+</script>
+]]></embedCode>
+                            <title>Infomaker on Twitter</title>
+                        </data>
+                        <links>
+                            <link rel="alternate" title="Infomaker on Twitter" type="text/html"
+                                  url="https://twitter.com/infomakernews/status/910422014271348736">
+                                <data>
+                                    <context>Social</context>
+                                    <description>interdum idmassa sed ullamcorper. pic.twitter.com/qSFK03tmMu— Infomaker
+                                        (@infomakernews) September 20, 2017
+                                    </description>
+                                    <provider>Twitter</provider>
+                                </data>
+                            </link>
+                            <link rel="alternate" type="image/jpg"
+                                  url="https://pbs.twimg.com/media/DKJ3zwRWkAA6eY-.jpg:large">
+                                <data>
+                                    <height>1536</height>
+                                    <width>2048</width>
+                                </data>
+                            </link>
+                        </links>
+                    </object>
+                </group>
+            </idf>
+        </inlineXML>
+    </contentSet>
+</newsItem>

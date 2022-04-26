@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<newsItem conformance="power" guid="a83d8e24-50a9-554e-8580-0bf53c771d46" standard="NewsML-G2" standardversion="2.20" version="1" xmlns="http://iptc.org/std/nar/2006-10-01/">
+    <catalogref href="http://www.iptc.org/std/catalog/catalog.IPTC-G2-Standards_27.xml"></catalogref>
+    <catalogref href="http://infomaker.se/spec/catalog/catalog.infomaker.g2.1_0.xml"></catalogref>
+    <itemMeta>
+        <itemClass qcode="ninat:text"></itemClass>
+        <provider literal="apnitf"></provider>
+        <versionCreated>2019-06-11T18:20:30Z</versionCreated>
+        <firstCreated>2019-06-11T18:20:30Z</firstCreated>
+        <pubStatus qcode="imext:draft"></pubStatus>
+        <title>FC Bayern München und Procter &amp;amp; Gamble setzen Zusammenarbeit fort und weiten ihre Partnerschaft auch auf die Frauenfußballmannschaft aus</title>
+        <links xmlns="http://www.infomaker.se/newsml/1.0">
+            <link rel="same-as" type="ap/event" uri="ap://event/1ab4068085194c71bda4a8ce5d796534">
+                <data>
+                    <id>1ab4068085194c71bda4a8ce5d796534</id>
+                </data>
+                <links xmlns="http://www.infomaker.se/newsml/1.0"></links>
+            </link>
+            <link rel="author" title="AP " type="x-im/author" uuid="ab5b53d7-362c-58d2-9dc0-9febb315c8f7">
+                <data>
+                    <first>AP</first>
+                    <last></last>
+                    <email></email>
+                    <phone></phone>
+                </data>
+                <links xmlns="http://www.infomaker.se/newsml/1.0"></links>
+            </link>
+        </links>
+        <edNote>Imported from AP</edNote>
+        <itemMetaExtProperty type="imext:type" value="x-im/article"></itemMetaExtProperty>
+        <itemMetaExtProperty type="imext:haspublishedversion" value="false"></itemMetaExtProperty>
+        <itemMetaExtProperty type="imext:uri" value="im://article/a83d8e24-50a9-554e-8580-0bf53c771d46"></itemMetaExtProperty>
+    </itemMeta>
+    <contentMeta>
+        <contentCreated>2019-06-11T18:20:30Z</contentCreated>
+        <contentModified>2019-06-11T18:20:30Z</contentModified>
+        <infoSource></infoSource>
+        <altId>1ab4068085194c71bda4a8ce5d796534</altId>
+        <slugline></slugline>
+        <description></description>
+        <metadata xmlns="http://www.infomaker.se/newsml/1.0">
+            <object id="zguqxrxGzzbQjF5G" type="x-im/teaser" title="FC Bayern München und Procter &amp;amp; Gamble setzen Zusammenarbeit fort und weiten ihre Partnerschaft auch auf die Frauenfußballmannschaft aus">
+                <data>
+                    <text>MÜNCHEN &amp;amp; SCHWALBACH AM TAUNUS, Deutschland--(BUSINESS WIRE)--Jun 3, 2019--</text>
+                </data>
+                <links xmlns="http://www.infomaker.se/newsml/1.0"></links>
+            </object>
+            <object id="htIujzkCvM40xrtO" type="x-im/newsvalue">
+                <data>
+                    <score>5</score>
+                </data>
+                <links xmlns="http://www.infomaker.se/newsml/1.0"></links>
+            </object>
+        </metadata>
+        <links xmlns="http://www.infomaker.se/newsml/1.0">
+            <link rel="articlesource" title="AP" type="x-im/articlesource" uri="im://articlesource/ap">
+                <data></data>
+                <links xmlns="http://www.infomaker.se/newsml/1.0"></links>
+            </link>
+            <link rel="premium" title="Premium" type="x-im/premium" uri="im://premium/premium">
+                <data></data>
+                <links xmlns="http://www.infomaker.se/newsml/1.0"></links>
+            </link>
+        </links>
+    </contentMeta>
+    <contentSet>
+        <inlineXML>
+            <idf xml:lang="en-US" xmlns="http://www.infomaker.se/idf/1.0">
+                <group type="body">
+                    <element id="75Da4iNvwrHmQSk3" type="headline">FC Bayern München und Procter &amp; Gamble setzen Zusammenarbeit fort und weiten ihre Partnerschaft auch auf die Frauenfußballmannschaft aus</element>
+                    <element id="V61XBZEgpcvfpvWE" type="body">MÜNCHEN &amp; SCHWALBACH AM TAUNUS, Deutschland--(BUSINESS WIRE)--Jun 3, 2019--</element>
+                    <element id="J6Rz6dhkkMWycZnC" type="body">
+                        <em>Der FC Bayern München und der weltweit führende Konsumgüterhersteller Procter &amp; Gamble verlängern ihre erfolgreiche Partnerschaft. Die weitere Zusammenarbeit umfasst das gesamte Markenportfolio von Procter &amp; Gamble, zu dem Marken wie Gillette, Braun, Head &amp; Shoulders oder Oral-B gehören, und gilt neben Deutschland auch für Österreich und die Schweiz. Dabei wird die Kooperation künftig auch auf die Frauenfußballmannschaft des</em>
+                    </element>
+                    <element id="ERcfKd0FvdyxMZa7" type="body">
+                        Diese Pressemitteilung enthält multimediale Inhalte. Die vollständige Mitteilung hier ansehen:
+                        <a href="https://www.businesswire.com/news/home/20190603005359/de/" rel="nofollow">https://www.businesswire.com/news/home/20190603005359/de/</a>
+                    </element>
+                    <element id="DwLobTdgvASOG3GB" type="body">Astrid Teckentrup, Geschäftsführerin Vertrieb von Procter &amp; Gamble und Andreas Jung, Vorstand Marketing der FC Bayern München AG, geben die Vertragsverlängerung der beiden Unternehmen bekannt (Photo: Business Wire)</element>
+                    <element id="PdpFlNBzyZ7WDtIL" type="body">
+                        <em>FC Bayern München ausgeweitet. Die zur Saison 2018/19 ins Leben gerufene Aktion #FamilienChancen wird weitergeführt. Der FC Bayern München unterstützt #FamilienChancen.</em>
+                    </element>
+                    <element id="xrpMQAejOQTgG2Cs" type="body">Procter &amp; Gamble gratuliert dem FC Bayern München zum Gewinn des Doubles von Meisterschaft und Pokal und gibt bekannt, dass die Zusammenarbeit mit dem FC Bayern München fortgesetzt wird. Die erfolgreiche Kooperation wird von der kommenden Spielzeit an auch auf die Frauenfußballmannschaft des FC Bayern ausgeweitet. Damit werden Marken mit einer weiblichen Zielgruppe aus dem Portfolio von Procter &amp; Gamble stärker in den Fokus gestellt.</element>
+                    <element id="RUIMVCiScGxWngJT" type="body">Als national wie international führender Konsumgüterhersteller bietet Procter &amp; Gamble ein breites Spektrum an führenden Marken, die das Vertrauen von Menschen in der ganzen Welt genießen. Der FC Bayern München begeistert als einer der erfolgreichsten Sportvereine der Welt Menschen im In- und Ausland. Gemeinsam haben Procter &amp; Gamble und der FC Bayern in den zurückliegenden drei Jahren sehr erfolgreich nachhaltige Markenkampagnen umgesetzt.</element>
+                    <element id="SKNuzMU8zJog72D1" type="body">Zudem hat Procter &amp; Gamble, unterstützt vom FC Bayern, in der Fußballsaison 2018/19 die Initiative #FamilienChancen ins Leben gerufen. Mit dieser Aktion setzt sich Procter &amp; Gamble dafür ein, Aufmerksamkeit auf die alltäglichen Höchstleistungen von Familien zu richten und Familien bei ihren Herausforderungen im Alltag zu unterstützen. Auch bei dieser Initiative wird die Zusammenarbeit fortgesetzt.</element>
+                    <element id="Y8ro9gUkYHPTZYHZ" type="body">
+                        „Der FC Bayern München ist nicht umsonst Rekordmeister: Jeder im Team arbeitet tagtäglich hart dafür, um in allen Wettbewerben Höchstleistungen abzurufen. Spitzenleistungen sind auch unser Anspruch bei Procter &amp; Gamble. Wir arbeiten jeden Tag daran, das Leben der Menschen etwas besser zu machen. Mit diesem gemeinsamen Fokus konnten wir schon einige sehr erfolgreiche Kampagnen für unsere Top-Marken realisieren“, erklärte
+                        <em>Astrid Teckentrup, Geschäftsführerin Vertrieb von Procter &amp; Gamble.</em>
+                        „Zudem liegt dem FC Bayern München, ebenso wie uns bei Procter &amp; Gamble, soziale Verantwortung sehr am Herzen. Mit #FamilienChancen haben wir eine soziale Initiative geschaffen, mit der wir Familien aktiv in ihrem Alltag unterstützen. Hier freuen wir uns ganz besonders über die Verlängerung unserer Zusammenarbeit.“
+                    </element>
+                    <element id="ttCmpB6KVMQ0oo65" type="body">
+                        „Wir freuen uns, dass wir die erfolgreiche Partnerschaft mit einem so starken Partner wie Procter &amp; Gamble fortsetzen und mit den Spielerinnen und Spielern des FC Bayern München auf eine neue Ebene heben werden“, erklärt
+                        <em>Andreas Jung, Vorstand Marketing der FC Bayern München AG.</em>
+                        „Die Familie hat für den FC Bayern München einen hohen Stellenwert. Daher sind wir sehr froh, dass neben den markenspezifischen Kampagnen auch die Kampagne #FamilienChancen, unterstützt vom FC Bayern München, weitergeführt wird.“
+                    </element>
+                    <element id="qhU8nXlIAYisvSfB" type="body">
+                        <em>Bildunterschrift von links: Astrid Teckentrup, Geschäftsführerin Vertrieb von Procter &amp; Gamble und Andreas Jung, Vorstand Marketing der FC Bayern München AG, geben die Vertragsverlängerung der beiden Unternehmen bekannt</em>
+                    </element>
+                    <element id="RbivWbox7iynleLe" type="body">
+                        <em>Über Procter &amp; Gamble</em>
+                    </element>
+                    <element id="PpYtN8u7rRvNEw89" type="body">
+                        Procter &amp; Gamble (P&amp;G) bietet Verbrauchern auf der ganzen Welt eines der stärksten Portfolios mit qualitativ hochwertigen und führenden Marken wie Always®, Ambi Pur®, Ariel®, Bounty®, Braun®, Charmin®, Crest®, Dawn®, Downy®, Fairy®, Febreze®, Gain®, Gillette®, Head&amp;Shoulders®, Lenor®, Olaz®, Oral-B®, Pampers®, Pantene®, SK-II®, Tide®, Whisper® und Wick®. P&amp;G ist weltweit in 70 Ländern tätig. Weitere Informationen über P&amp;G und seine Marken finden Sie unter
+                        <a href="https://cts.businesswire.com/ct/CT?id=smartlink&amp;url=http%3A%2F%2Fwww.pg.com&amp;esheet=51993307&amp;newsitemid=20190603005359&amp;lan=de-DE&amp;anchor=www.pg.com&amp;index=1&amp;md5=61bbf51cb7935895351a837ce90e06ad" rel="nofollow">www.pg.com</a>
+                        und
+                        <a href="https://cts.businesswire.com/ct/CT?id=smartlink&amp;url=http%3A%2F%2Fwww.twitter.com%2FPGDeutschland&amp;esheet=51993307&amp;newsitemid=20190603005359&amp;lan=de-DE&amp;anchor=www.twitter.com%2FPGDeutschland&amp;index=2&amp;md5=8e59fe3c9286b0305c8087f13fe8d414" rel="nofollow">www.twitter.com/PGDeutschland</a>
+                        .
+                    </element>
+                    <element id="lV6ZmcY4mRfTQhM6" type="body"></element>
+                    <element id="qmlt7ppT9cLsfGU5" type="body"></element>
+                    <element id="JTzxIRLlZB4bGcD8" type="body">
+                        Originalversion auf businesswire.com ansehen:
+                        <a href="https://www.businesswire.com/news/home/20190603005359/de/" rel="nofollow">https://www.businesswire.com/news/home/20190603005359/de/</a>
+                    </element>
+                    <element id="oqCcDdAdA1l59xV9" type="body">    CONTACT: Pressekontakt:P&amp;G, Unternehmenskommunikation,Sulzbacher Straße 40, 65824 Schwalbach/Ts.</element>
+                    <element id="82wUlibMPjExKcuj" type="body">Gabriele Hässig, Tel.: +49 6196 89-6647, E-Mail:haessig.g@pg.com</element>
+                    <element id="VDLKrD9Nk1K0aSaz" type="body">             Björn Sievers, Tel.: +49 6196 89-8952, E-Mail:sievers.b.1@pg.com</element>
+                    <element id="NcwkdA3W5CRt0eca" type="body">KEYWORD: EUROPE GERMANY 
+                    </element>
+                    <element id="sZzAgTBnMN6yArPB" type="body">INDUSTRY KEYWORD: WOMEN FOOTBALL RETAIL OTHER RETAIL CONSUMER SPORTS FAMILY 
+                    </element>
+                    <element id="mOYAjLN5xqsZuuGh" type="body">SOURCE: Procter &amp; Gamble
+                    </element>
+                    <element id="Nz4uQXKtw560WMnP" type="body">Copyright Business Wire 2019.
+                    </element>
+                    <element id="1TiqZ5VVtUrkVPp9" type="body">PUB: 06/03/2019 04:42 AM/DISC: 06/03/2019 04:42 AM</element>
+                    <element id="X6WAQ1wCgEMg7PNk" type="body">http://www.businesswire.com/news/home/20190603005359/de</element>
+                </group>
+            </idf>
+        </inlineXML>
+    </contentSet>
+</newsItem>

@@ -1,0 +1,237 @@
+<newsItem xmlns="http://iptc.org/std/nar/2006-10-01/" version="1" conformance="power" standardversion="2.20" standard="NewsML-G2" guid="1d02738f-7c99-42ba-a6da-3d1b97261523">
+    <catalogRef href="http://www.iptc.org/std/catalog/catalog.IPTC-G2-Standards_27.xml"/>
+    <catalogRef href="http://infomaker.se/spec/catalog/catalog.infomaker.g2.1_0.xml"/>
+    <itemMeta>
+        <itemClass qcode="ninat:text"/>
+        <provider literal="John Doe"/>
+        <versionCreated>2015-07-01T14:11:20Z</versionCreated>
+        <firstCreated>2015-07-01T14:00:02Z</firstCreated>
+        <pubStatus qcode="stat:withheld"/>
+        <title>Proin eget dignissim ipsum</title>
+        <edNote>Duis eget magna lacus. In sodales lectus vel egestas rhoncus</edNote>
+        <itemMetaExtProperty type="imext:type" value="x-im/article"/>
+        <itemMetaExtProperty type="imext:subtype" value="x-im/print" creator="app:newspilot"/>
+        <itemMetaExtProperty type="imext:haspublishedversion" value="true"/>
+        <itemMetaExtProperty type="imext:uri" value="im://article/1d02738f-7c99-42ba-a6da-3d1b97261523"/>
+        <itemMetaExtProperty type="imext:url" value="http://example.org/articles/1d02738f-7c99-42ba-a6da-3d1b97261523.xml"/>
+        <itemMetaExtProperty type="imext:pubstart" value="2015-07-01T14:27:00+02:00"/>
+        <itemMetaExtProperty type="imext:pubstop" value="2015-10-05T15:14:13+02:00"/>
+        <links xmlns="http://www.infomaker.se/newsml/1.0">
+            <link title="Quisque pharetra id velit quis commodo" rel="article" type="x-im/article" uuid="2175c4bb-fdcc-5a52-bc3b-658562f554cf"/>
+            <link rel="alternate" type="x-im/article" uuid="a0836ecc-1d4a-4ce0-b5dc-7d06ba853759"/>
+            <link rel="creator" type="x-imid/user" uri="imid://user/sub/znY7U3CO134n26zv9gb44_jCzSp"/>
+            <link rel="updater" type="x-imid/user" uri="imid://user/sub/znY7U3CO134n26zv9gb44_jCzSp"/>
+            <link title="Premium" rel="mainchannel" type="x-im/channel" uuid="a0836ecc-1d4a-4ce0-b5dc-7d06ba853759"/>
+            <link title="dd.se" rel="channel" type="x-im/channel" uuid="bc2798fa-12ff-11e8-96d9-0ed5f89f718b"/>
+            <link title="John Doe" rel="author" type="x-im/author" uuid="9e1653f3-7575-4cb7-9b74-dc4dea63513e" uri="im://user/58456">
+                <data>
+                    <email>
+                        <home>john.doe@example.org</home>
+                        <work>john@gmail.com</work>
+                    </email>
+                </data>
+            </link>
+            <link title="Jane Doe" rel="author" type="x-im/author" uuid="bad4314c-7e33-11e5-8bcf-feff819cdc9f" uri="im://user/58456">
+                <links>
+                    <link rel="avatar" type="x-im/image" uuid="9c188460-c500-11e5-9912-ba0be0483c18" uri="im://image/janedoe.jpeg"/>
+                </links>
+            </link>
+            <link title="Hedemora" rel="subject" type="x-im/category" uuid="d72eb011-1552-4af4-8d15-cd4f8c157a87"/>
+            <link title="Dalarna" rel="subject" type="x-im/category" uuid="03d22994-91e4-11e5-8994-feff819cdc9f"/>
+            <link title="Volvo" rel="subject" type="x-im/topic" uuid="b201e042-555b-11e5-885d-feff819cdc9f"/>
+            <link title="Saab" rel="subject" type="x-im/topic" uuid="14d59118-91e4-11e5-8994-feff819cdc9f"/>
+            <link title="Alvesta" rel="subject" type="x-im/place" uuid="bce38dda-555b-11e5-885d-feff819cdc9f">
+                <data>
+                    <geometry>POINT(14.55600 56.89921)</geometry>
+                </data>
+            </link>
+            <link title="Stockholm" rel="subject" type="x-im/place" uuid="48bdde54-91e4-11e5-8994-feff819cdc9f">
+                <data>
+                    <geometry>POINT(18.0685810 59.3293230)</geometry>
+                </data>
+            </link>
+            <link title="Kalmar" rel="subject" type="x-im/place" uuid="320938f8-db94-11e5-b5d2-0a1d41d68578">
+                <data>
+                    <geometry>POLYGON((15.927104999999983 56.52092099999997,15.81290899999999
+                        56.521005,15.761852999999974 56.53631000000001,15.743408000000045
+                        56.56162099999999,15.763378999999986 56.578452000000006,15.76974999999993
+                        56.60278499999998,15.884826999999973 56.610537,15.937459999999987
+                        56.65602899999998,15.897770000000037 56.683924000000005,15.953058000000055
+                        56.69666199999999,16.06211499999995 56.671465000000005,16.07262000000003
+                        56.71785899999999,16.03175699999997 56.74044700000002,16.12640399999998
+                        56.75234799999998,16.11106300000006 56.80044500000001,16.11191800000006
+                        56.84746899999999,16.150035000000003 56.841344,16.178530000000023
+                        56.87930699999998,16.174943999999982 56.90671000000002,16.23679500000003
+                        56.93642099999999,16.370225000000005 56.895477,16.438777000000073
+                        56.887794,16.444588920898468 56.827982181232876,16.45837226464846
+                        56.8129675976375,16.506553275390615 56.78757339890983,16.461156719726546
+                        56.75290442123698,16.399744000000055 56.78296599999998,16.38394282031254
+                        56.65206280372057,16.31990650292971 56.62710503013163,16.28092002148435
+                        56.60460106881793,16.224918000000002 56.595492,16.22716300000002
+                        56.54824099999998,16.21953540234381 56.5145372338241,16.17962291015624
+                        56.48224874176693,16.12245400000006 56.470696000000004,16.002729000000045
+                        56.50876299999999,15.99745299999995 56.52902499999998,15.927104999999983
+                        56.52092099999997)) </geometry>
+                </data>
+            </link>
+            <link type="x-imid/organisation" uri="imid://organisation/Company-X" title="Company-X">
+                <links>
+                    <link type="x-imid/unit" uri="imid://unit/Newspaper-1" title="Newspaper-1"/>
+                </links>
+            </link>
+        </links>
+    </itemMeta>
+    <contentMeta>
+        <contentCreated>2015-07-01T14:00:02Z</contentCreated>
+        <contentModified>2015-07-01T14:11:20Z</contentModified>
+        <infoSource literal="MKT"/>
+        <altId>1234456</altId>
+        <slugline>Praesent nisl risus, lobortis sed congue at...</slugline>
+        <description>Quisque ullamcorper non ligula vel commodo.</description>
+        <language tag="sv"/>
+        <by>Jane Doe</by>
+        <headline>Lorem ipsum dolor sit</headline>
+        <metadata xmlns="http://www.infomaker.se/newsml/1.0">
+            <object id="8400c74d665x" type="x-im/newsvalue">
+                <data>
+                    <score value="2">1</score>
+                    <description>6H</description>
+                    <text>PT6H</text>
+                    <duration>3600</duration>
+                    <format>lifetimecode</format>
+                    <end>2016-01-31T10:00:00.000+01:00</end>
+                </data>
+            </object>
+            <object id="9076h25e322y" type="x-im/print-meta">
+                <data>
+                    <firstPagin>2</firstPagin>
+                    <multiPageCount>2</multiPageCount>
+                    <part>A</part>
+                    <publicationDate>2017-11-28</publicationDate>
+                    <publicationDateName>29.11.2017</publicationDateName>
+                    <originalArticleNewspilotID>112233</originalArticleNewspilotID>
+                    <originalArticleNewspilotGUID>dfec478e-0014-4948-afb7-08fe0038307a</originalArticleNewspilotGUID>
+                    <newspilotJobId>2211</newspilotJobId>
+                </data>
+            </object>
+            <object id="8400c74d667e" type="x-im/teaser" title="Sed sit amet turpis a purus fringilla">
+                <data>
+                    <subject>In sodales lectus vel egestas rhoncus</subject>
+                    <text>Duis eget magna lacus. In sodales lectus vel egestas rhoncus. Fusce
+                        ultrices urna vel ante sodales tincidunt. Maecenas at nisl in lorem egestas
+                        egestas id sed ipsum. Sed aliquam gravida dolor. </text>
+                </data>
+                <links>
+                    <link rel="image" type="x-im/image" uri="im://image/znX8U1CU124n26zu7gb40_jBzSk.jpeg" uuid="c382c937-8511-5d48-9677-55658c2bbb32">
+                        <data>
+                            <width>1536</width>
+                            <height>1024</height>
+                        </data>
+                    </link>
+                </links>
+            </object>
+        </metadata>
+        <links xmlns="http://www.infomaker.se/newsml/1.0">
+            <link rel="articlesource" title="Online" type="x-im/articlesource" uri="im://articlesource/online"/>
+        </links>
+    </contentMeta>
+    <contentSet>
+        <inlineXML>
+            <idf xml:lang="sv-SE" dir="ltr" 
+                xmlns="http://www.infomaker.se/idf/1.0">
+                <group type="body">
+                    <element id="fafbedf02da1" type="body" format="html">Mauris eleifend, <a href="http://google.com" id="link-5399cd1a1d7c8336c2c2203f2be1cb94" title="">Bacon </a> orci nec volutpat efficitur massa. </element>
+                    <element id="8a5ef068ef15" type="body" format="html">In hac habitasse plateadictumst</element>
+                    <object id="dcc7c5fcf709" type="x-im/image" uuid="f845d7b8-40cb-545a-8069-36e21ff00908">
+                        <links>
+                            <link rel="self" type="x-im/image" uri="im://image/znX8U1C123JLDjlksdfgb40_jIka.jpeg" uuid="f845d7b8-40cb-545a-8069-36e21ff00908">
+                                <data>
+                                    <text>Vivamus luctus eros.</text>
+                                    <width>3560</width>
+                                    <height>2695</height>
+                                    <alttext/>
+                                    <credit/>
+                                    <alignment>auto</alignment>
+                                </data>
+                                <links>
+                                    <link rel="author" type="x-im/author" uuid="bad4314c-7e33-11e5-8bcf-feff819cdc9f" title="Jane Doe"/>
+                                    <link rel="crop" title="16:9" type="x-im/crop" uri="im://crop/0.07865168539325842/0.0899/0.8426966292134831/0.9899"/>
+                                    <link rel="crop" title="1:1" type="x-im/crop" uri="im://crop/0.24/0.20786516853932585/0.44/0.6591760299625468" />
+                                </links>
+                            </link>
+                            <link rel="source" type="x-xyz/image" uri="xyz://image/2345836363"/>
+                        </links>
+                    </object>
+                    <element id="6e5af065ef33" type="body" format="html">Sed a urna tincidunt,
+                        consectetur est quis, malesuada est.</element>
+                    <object id="youtubeembed-1c1bd399dfa9513795e5626e08cab898" type="x-im/youtube" url="https://www.youtube.com/watch?v=EiWsPd6JDoo">
+                        <data>
+                            <start>0</start>
+                        </data>
+                        <links>
+                            <link rel="alternate" type="image/jpg" url="https://imengine.se/457383845734734">
+                                <data>
+                                    <width>200</width>
+                                    <height>400</height>
+                                </data>
+                            </link>
+                            <link rel="alternate" type="text/html" url="https://www.youtube.com/watch?v=EiWsPd6JDoo" title="Click link to view content">
+                                <data>
+                                    <context>Video</context>
+                                    <provider>YouTube</provider>
+                                </data>
+                            </link>
+                        </links>
+                    </object>
+                    <object id="iframely-f79e0901d1e0d97b4dc2c163397e6c4f" type="x-im/iframely" url="https://twitter.com/infomakernews/status/910422014271348736">
+                        <data>
+                            <title>Infomaker on Twitter</title>
+                            <embedCode>
+                                <![CDATA[<blockquote class="twitter-tweet" align="center">
+<p lang="sv" dir="ltr">Igår kväll hittade vi på hyss tillsammans med <a href="https://twitter.com/hashtag/wilsoncreative?src=hash&amp;ref_src=twsrc%5Etfw">#wilsoncreative</a>, team <a href="https://twitter.com/WilsonHasse?ref_src=twsrc%5Etfw">@WilsonHasse</a> och co. Stay tuned för det färdiga resultatet! <a href="https://twitter.com/hashtag/ePaper?src=hash&amp;ref_src=twsrc%5Etfw">#ePaper</a><a href="https://t.co/qSFK03tmMu">pic.twitter.com/qSFK03tmMu</a>
+</p>&mdash; Infomaker (@infomakernews) <a href="https://twitter.com/infomakernews/status/910422014271348736?ref_src=twsrc%5Etfw">September 20, 2017</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8">
+</script>
+                                ]]>
+                            </embedCode>
+                        </data>
+                        <links>
+                            <link rel="alternate" type="text/html" title="Infomaker on Twitter" url="https://twitter.com/infomakernews/status/910422014271348736">
+                                <data>
+                                    <context>Social</context>
+                                    <description>interdum idmassa sed ullamcorper. pic.twitter.com/qSFK03tmMu— Infomaker (@infomakernews) September 20, 2017</description>
+                                    <provider>Twitter</provider>
+                                </data>
+                            </link>
+                            <link rel="alternate" type="image/jpg" url="https://pbs.twimg.com/media/DKJ3zwRWkAA6eY-.jpg:large">
+                                <data>
+                                    <width>2048</width>
+                                    <height>1536</height>
+                                </data>
+                            </link>
+                        </links>
+                    </object>
+                    <object id="MTU0LDE0MywyMTQsMTgw" type="x-im/content-part" title="Vivamus vitae gravida">
+                        <data>
+                            <title>Vivamus vitae gravida</title>
+                            <subject>Fact</subject>
+                            <text format="idf">
+                                <element id="paragraph-f6f5d97f5c8d6cd4977981ee4e609985" type="body">
+                                    <strong id="strong-88285daa39e05cb9bffd601c1e72322e">Quisque ac</strong>
+                                </element>
+                                <element id="paragraph-abb247cabe3778f5296f3b65aa3c3cbb" type="body">Etiam <em id="emphasis-8734116999568b91e80e5c4e0453e117">interdum idmassa sed ullamcorper.
+                                    </em>
+                                </element>
+                            </text>
+                        </data>
+                        <links>
+                            <!-- If configured to support different types, the selected type is represented as a link -->
+                            <link rel="type" type="x-im/fact-1" title="Faktaruta"/>
+                        </links>
+                    </object>
+                </group>
+            </idf>
+        </inlineXML>
+    </contentSet>
+</newsItem>

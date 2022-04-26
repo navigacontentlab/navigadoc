@@ -1,0 +1,62 @@
+<newsItem guid="c382c937-8511-5d48-9677-55658c2bbb32" xmlns="http://iptc.org/std/nar/2006-10-01/"
+    conformance="power" standardversion="2.20" standard="NewsML-G2" version="1">
+    <catalogRef href="http://www.iptc.org/std/catalog/catalog.IPTC-G2-Standards_27.xml"/>
+    <catalogRef href="http://infomaker.se/spec/catalog/catalog.infomaker.g2.1_0.xml"/>
+    <itemMeta>
+        <itemClass qcode="ninat:graphic"/>
+        <versionCreated>2015-07-01T14:11:20Z</versionCreated>
+        <firstCreated>2015-07-01T14:11:20Z</firstCreated>
+        <pubStatus qcode="stat:withheld"/>
+        <fileName>hCgYLejZv2uOYdNZlHGdryUsyb8.pdf</fileName>
+        <itemMetaExtProperty type="imext:type" value="x-im/pdf"/>
+        <itemMetaExtProperty type="imext:uri" value="im://pdf/hCgYLejZv2uOYdNZlHGdryUsyb8.pdf"/>
+        <!-- Optional -->
+        <itemMetaExtProperty type="imext:originalUrl" value="//s3.example-pdf.se/hCgYLejZv2uOYdNZlHGdryUsyb8.pdf"/>
+        <!-- Optional -->
+        <links xmlns="http://www.infomaker.se/newsml/1.0">
+            <link rel="creator" type="x-imid/user"
+                uri="imid://user/sub/znY7U3CO134n26zv9gb44_jCzSp"/>
+            <link rel="updater" type="x-imid/user"
+                uri="imid://user/sub/znY7U3CO134n26zv9gb44_jCzSp"/>
+            <link rel="author" type="x-im/author/local"
+                uri="im://author/local/c_r" title="C R"/>
+            <link type="x-imid/organisation" uri="imid://organisation/Company-X" title="Company-X">
+                <links>
+                    <link type="x-imid/unit" uri="imid://unit/Newspaper-1" title="Newspaper-1"/>
+                </links>
+            </link>
+        </links>
+    </itemMeta>
+    <contentMeta>
+        <contentCreated>2015-07-01T14:11:20Z</contentCreated>
+        <contentModified>2015-07-01T14:11:20Z</contentModified>
+        <!--
+            Optional. A party (person or organisation) which originated, distributed, aggregated or supplied the content or provided some information
+            used to create or enhance the content.
+            Writer will not add this be default to pictures uploaded in writer.
+        -->
+        <infoSource>MKT</infoSource>
+        <!--
+            Optional. An alternative identifier assigned to the content.
+        -->
+        <altId>1234456</altId>
+        <metadata xmlns="http://www.infomaker.se/newsml/1.0">
+            <object id="46f60ada63fd" type="x-im/pdf">
+                <data>
+                    <!--
+                        PDF title
+                    -->
+                    <text>Disaster-Report of 2016</text>
+                    <!--
+                        Original object (file) name
+                    -->
+                    <objectName>DisasterReport.pdf</objectName>
+                    <!--
+                        MIME Type
+                    -->
+                    <mimeType>application/pdf</mimeType>
+                </data>
+            </object>
+        </metadata>
+    </contentMeta>
+</newsItem>

@@ -1,0 +1,92 @@
+<!--
+    @published maps to $.properties
+
+    @published works together with pubStatus according to these rules:
+
+    New package:
+        - pubStatus = draft
+        - published = false
+    Published package with future pubStart:
+        - pubStatus = public
+        - published = false
+    Published package where pubStart has passed:
+        - pubStatus = public
+        - published = true
+    Package that has been unpublished:
+        - pubStatus = private
+        - published = false
+
+
+    @uuid maps to $.uuid
+
+    NOTE! that @uuid does not exists as-is (but it is ok if conversion adds it, i.e non-breaking).
+-->
+<package published="false" uuid="67f7687e-85c8-4d3c-9c01-095f96fec235">
+    <!-- $.links with rel=cover and type=x-im/article -->
+    <cover uuid="b998429c-7e72-418a-b0af-27ffb07d0dc7"/>
+    <!-- $.title -->
+    <name>Ps testpaket</name>
+    <!--
+        $.meta[.type="x-im/package"].data.subtype
+
+        Can be any type of string. Identifies a configurable type of the package.
+    -->
+    <type>newsletter</type>
+    <!--
+        NOTE! <products> will not be mapped. Instead it is expected that a migration
+        is done that moves all <product> to proper links with @uuid pointing to the
+        corresponding name (e.g. "esg").
+        IF it is not an option to do a migration as a requirement, products needs to
+        be mapped as links with "uri" (compare with sector/section).
+    -->
+    <products>
+        <product>bar</product>
+        <product>ot</product>
+    </products>
+    <!--
+        $.meta[.type="x-im/package"].data.category
+
+        Can be any type of string. Identifies a configurable subgenre of the package.
+    -->
+    <category>morning edition</category>
+    <!-- $.published -->
+    <pubStart>2020-02-03T07:25:23.384Z</pubStart>
+    <!-- $.unpublished -->
+    <pubStop>2020-03-03T07:25:23.384Z</pubStop>
+    <!--
+        $.status
+
+        NOTE! pubStatus does not use the ordinary imext:draft, stat:usable etc so
+        there needs to be a mapping between package status and "proper" status.
+
+        draft <=> draft
+        public <=> usable
+        private <=> canceled
+    -->
+    <pubStatus>draft</pubStatus>
+    <!-- an object under $.links with $.type="x-im/list, $.rel="list" and $.uuid="d1765c6b-4ca3-4f64-a137-afbd2d315a40" -->
+    <itemList uuid="d1765c6b-4ca3-4f64-a137-afbd2d315a40"/>
+    <itemMeta>
+        <!-- links be handled the same ways as for NavigaDoc images (and other documents) -->
+        <links xmlns="http://www.infomaker.se/newsml/1.0">
+            <link rel="creator" title="P A" type="x-imid/user" uri="imid://user/sub/fc968830-04b8-42c7-ab71-e7eb7c5ba7de">
+                <links>
+                    <link rel="affiliation" title="naviga" type="x-imid/organisation" uri="imid://organisation/naviga">
+                        <links>
+                            <link rel="affiliation" title="naviganews" type="x-imid/unit" uri="imid://unit/naviganews"/>
+                        </links>
+                    </link>
+                </links>
+            </link>
+            <link rel="updater" title="P A" type="x-imid/user" uri="imid://user/sub/fc968830-04b8-42c7-ab71-e7eb7c5ba7de">
+                <links>
+                    <link rel="affiliation" title="naviga" type="x-imid/organisation" uri="imid://organisation/naviga">
+                        <links>
+                            <link rel="affiliation" title="naviganews" type="x-imid/unit" uri="imid://unit/naviganews"/>
+                        </links>
+                    </link>
+                </links>
+            </link>
+        </links>
+    </itemMeta>
+</package>

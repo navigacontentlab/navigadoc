@@ -1,0 +1,99 @@
+{
+    "uuid": "c382c937-8511-5d48-9677-55658c2bbb32",
+    "type": "x-im/image",
+    "uri": "im://image/vApvJyM3pl2wpFpe0G2uBJxZfZc.jpeg",
+    "created": "2015-07-01T14:11:20Z",
+    "modified": "2015-07-01T14:11:20Z",
+    "source": "source-service",
+    "meta": [
+        {
+            "id": "1",
+            "type": "x-im/image",
+            "subtype": "content|item|concept://link|object",
+            "data": {
+                "credit": "Company XYZ",
+                "height": "1024",
+                "instructions": "Only use once",
+                "mimeType": "image/jpeg",
+                "objectName": "nebulosa.jpg",
+                "photoDateTime": "2015-07-01T14:11:20+02:00",
+                "source": "Mediahouse XYZ",
+                "text": "Maecenas at nisl in lorem egestas egestas.",
+                "width": "1536"
+            }
+        }
+    ],
+    "links": [
+        {
+            "uri": "xyz://image/2345836363",
+            "type": "x-xyz/image",
+            "rel": "source"
+        },
+        {
+            "uri": "imid://user/sub/znY7U3CO134n26zv9gb44_jCzSp",
+            "type": "x-imid/user",
+            "rel": "creator",
+            "links": [
+                {
+                    "uri": "imid://organisation/company-x",
+                    "type": "x-imid/organisation",
+                    "title": "Company X",
+                    "rel": "affiliation",
+                    "links": [
+                        {
+                            "uri": "imid://unit/newspaper-z",
+                            "type": "x-imid/unit",
+                            "title": "Newspaper Z",
+                            "rel": "affiliation"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "uri": "imid://user/sub/znY7U3CO134n26zv9gb44_jCzSp",
+            "type": "x-imid/user",
+            "rel": "updater"
+        },
+        {
+            "uuid": "bad4314c-7e33-11e5-8bcf-feff819cdc9f",
+            "type": "x-im/author",
+            "title": "Jane Doe",
+            "data": {
+                "email": "john.doe@example.com"
+            },
+            "rel": "author"
+        },
+        {
+            "uri": "imid://organisation/Company-X",
+            "type": "x-imid/organisation",
+            "title": "Company-X",
+            "links": [
+                {
+                    "uri": "imid://unit/Newspaper-1",
+                    "type": "x-imid/unit",
+                    "title": "Newspaper-1"
+                }
+            ]
+        }
+    ],
+    "properties": [
+        {
+            "name": "altId",
+            "value": "1234456"
+        },
+        {
+            "name": "filename",
+            "value": "vApvJyM3pl2wpFpe0G2uBJxZfZc.jpeg"
+        },
+        {
+            "name": "originalUrl",
+            "value": "http://s3.example-img.se/vApvJyM3pl2wpFpe0G2uBJxZfZc.jpeg"
+        },
+        {
+            "name": "infoSource",
+            "value": "MKT"
+        }
+    ],
+    "status": "withheld"
+}

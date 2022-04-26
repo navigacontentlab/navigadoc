@@ -1,0 +1,62 @@
+<!--
+    $.uuid
+
+    NOTE! that @uuid is not implemented in xml as-is but it ok to add it in the conversion (i.e. non-breaking)
+-->
+<list uuid="4e8ca834-e810-4bb1-b7fd-04c00a17c280">
+    <!-- $.title -->
+    <name>Test list</name>
+    <!-- $.meta.data.description -->
+    <description>This is a test</description>
+    <!-- $.type (x-im/list) -->
+    <type>list</type>
+    <!--
+        NOTE! <products> will not be mapped. Instead it is expected that a migration
+        is done that moves all <product> to proper links with @uuid pointing to the
+        corresponding name (e.g. "esg").
+        IF it is not an option to do a migration as a requirement, products needs to
+        be mapped as links with "uri" (compare with sector/section).
+    -->
+    <products>
+        <product>esg</product>
+    </products>
+    <!-- @limit should probably have to be put under $.meta.data.limit -->
+    <items limit="30">
+        <!--
+            $.content.
+
+            NOTE! mapping necessary between supported types;
+            List <=> x-im/list
+            Article <=> x-im/article
+            Package <=> x-im/package
+        -->
+        <item uuid="ea3de949-12d7-4bc7-b4f6-8d3708a05ce7" type="List"/>
+        <item uuid="b998429c-7e72-418a-b0af-27ffb07d0dc7" type="Article"/>
+        <item uuid="5c82df45-73b6-4b4e-a946-4645e5e11bba" type="Article"/>
+        <item uuid="a07f4f5c-0814-4fa4-8c69-64feab919b3d" type="Article"/>
+        <item uuid="9bad1876-7b6a-474b-85d7-6996913bdd48" type="Package"/>
+    </items>
+    <itemMeta>
+        <!-- links be handled the same ways as for NavigaDoc images (and other documents) -->
+        <links xmlns="http://www.infomaker.se/newsml/1.0">
+            <link rel="creator" title="P A" type="x-imid/user" uri="imid://user/sub/imid://user/sub/fc968830-04b8-42c7-ab71-e7eb7c5ba7de">
+                <links>
+                    <link rel="affiliation" title="naviga" type="x-imid/organisation" uri="imid://organisation/naviga">
+                        <links>
+                            <link rel="affiliation" title="naviganews" type="x-imid/unit" uri="imid://unit/naviganews"/>
+                        </links>
+                    </link>
+                </links>
+            </link>
+            <link rel="updater" title="Dev User" type="x-imid/user" uri="imid://user/sub/91dca1d9-9cc9-4ccd-9a38-0fab5766641a">
+                <links>
+                    <link rel="affiliation" title="naviga" type="x-imid/organisation" uri="imid://organisation/naviga">
+                        <links>
+                            <link rel="affiliation" title="naviganews" type="x-imid/unit" uri="imid://unit/naviganews"/>
+                        </links>
+                    </link>
+                </links>
+            </link>
+        </links>
+    </itemMeta>
+</list>

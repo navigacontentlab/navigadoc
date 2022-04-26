@@ -1,0 +1,17 @@
+<newsItem conformance="power" guid="5ace6734-f864-4c5f-8ff2-b1f9738ca257" standard="NewsML-G2"
+          standardversion="2.20" version="1" xmlns="http://iptc.org/std/nar/2006-10-01/">
+    <catalogRef href="http://www.iptc.org/std/catalog/catalog.IPTC-G2-Standards_27.xml"/>
+    <catalogRef href="http://infomaker.se/spec/catalog/catalog.infomaker.g2.1_0.xml"/>
+    <itemMeta>
+        <links xmlns="http://www.infomaker.se/newsml/1.0" >
+            <link rel="related-geo" type="" uuid="AC8D8A08-9D8E-4B40-9927-B3D0CE12B044">
+                <data>
+                    <uuid title="Kalmar">AC8D8A08-9D8E-4B40-9927-B3D0CE12B044</uuid>
+                    <uuid title="Sweden">25E426F0-7A84-4C4D-8233-25A31C4E3D42</uuid>
+                    <uuid title="Kalmar slott">7A1D5307-04E4-4B29-BBD0-925E69785FA1</uuid>
+                    <uuid title="Öland">C55A609F-AC07-40C8-A44A-92ABA53B62ED</uuid>
+                </data>
+            </link>
+        </links>
+    </itemMeta>
+</newsItem>

@@ -1,0 +1,80 @@
+{
+ "uuid": "f4370b2d-58d5-58d2-82fb-fcbef331c3f0",
+ "type": "x-im/category",
+ "uri": "http://cv.iptc.org/newscodes/mediatopic/20001185",
+ "title": "Unicode ampersand and char: Rhythm \u0026 Blues \u003c \u003e \u0022 \u0026 \u0027",
+ "created": "2020-11-04T13:57:10.945394+01:00",
+ "modified": "2020-11-04T13:57:10.945394+01:00",
+ "links": [
+  {
+   "uuid": "ce71afde-a341-54bb-bc3d-f52d19dfb6cf",
+   "uri": "http://cv.iptc.org/newscodes/mediatopic/20000021",
+   "type": "x-im/category",
+   "rel": "broader"
+  },
+  {
+   "uri": "http://cv.iptc.org/newscodes/mediatopic/20001185",
+   "type": "x-im/category",
+   "title": "Unicode ampersand: Rhythm \u0026 Blues",
+   "rel": "same-as"
+  },
+  {
+   "uri": "http://cv.iptc.org/newscodes/mediatopic/20001186",
+   "type": "x-im/category",
+   "title": "Unicode XML reserved characters: \u003c \u003e \u0022 \u0026 \u0027",
+   "rel": "same-as"
+  },
+  {
+   "uri": "http://cv.iptc.org/newscodes/mediatopic/20001186",
+   "type": "x-im/category",
+   "title": "XML reserved characters: < > ' \" &",
+   "rel": "same-as"
+  }
+ ],
+ "properties": [
+  {
+   "name": "definition",
+   "value": "Eine Musikgattung, die in den 1940er Jahren in afroamerikanischen Gemeinschaften entstand und sich durch gefühlvollen Gesang auszeichnet.",
+   "parameters": {
+    "role": "drol:long"
+   }
+  },
+  {
+   "name": "definition",
+   "value": "Unicode ampersand: Rhythm \u0026 Blues",
+   "parameters": {
+    "role": "drol:short"
+   }
+  },
+  {
+   "name": "definition",
+   "value": "Ampersand: Rhythm & Blues",
+   "parameters": {
+    "role": "drol:short"
+   }
+  },
+  {
+   "name": "definition",
+   "value": "Unicode XML reserved characters: \u003c \u003e \u0022 \u0026 \u0027",
+   "parameters": {
+    "role": "drol:short"
+   }
+  },
+  {
+   "name": "definition",
+   "value": "XML reserved characters: < > ' \" &",
+   "parameters": {
+    "role": "drol:short"
+   }
+  },
+  {
+   "name": "definition",
+   "value": "<span>Some nice & valid inner XML<a href=\"http://foo.bar\">some name</a></span>",
+   "parameters": {
+    "role": "drol:tiny"
+   }
+  }
+ ],
+ "language": "de",
+ "status": "stat:usable"
+}

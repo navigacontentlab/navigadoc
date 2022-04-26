@@ -1,0 +1,919 @@
+<!--
+    This is a "full-blown" example of an article including mapping instructions for navigadoc.
+-->
+<!-- @guid => $.uuid -->
+<newsItem conformance="power" guid="5ace6734-f864-4c5f-8ff2-b1f9738ca257" standard="NewsML-G2"
+          standardversion="2.20" version="1" xmlns="http://iptc.org/std/nar/2006-10-01/">
+    <catalogRef href="http://www.iptc.org/std/catalog/catalog.IPTC-G2-Standards_27.xml"/>
+    <catalogRef href="http://infomaker.se/spec/catalog/catalog.infomaker.g2.1_0.xml"/>
+    <itemMeta>
+        <!-- static mapping, i.e. not added to navigadoc -->
+        <itemClass qcode="ninat:text"/>
+        <!-- $.properties -->
+        <provider literal="InfomakerConfig"/>
+        <!-- $.status -->
+        <pubStatus qcode="imext:draft"/>
+        <!-- $.title -->
+        <title>"everything!"-article for backend team</title>
+        <!-- $.properties -->
+        <itemMetaExtProperty type="imext:haspublishedversion" value="false"/>
+        <!-- $.type -->
+        <itemMetaExtProperty type="imext:type" value="x-im/article"/>
+        <!-- $.links -->
+        <links xmlns="http://www.infomaker.se/newsml/1.0">
+            <link rel="author" title="user @ infomaker" type="x-im/author"
+                  uuid="13e5896f-e9c7-4481-8bb4-bd48bb69943d">
+                <data>
+                    <email>user@infomaker.io</email>
+                    <shortDescription>This is a user</shortDescription>
+                </data>
+            </link>
+            <link rel="mainchannel" title="Channel im" type="x-im/channel"
+                  uuid="90a0891b-2804-4c89-9515-d042c2f23e18"/>
+            <link rel="channel" title="Channel nav" type="x-im/channel"
+                  uuid="c0cabd37-c2c1-4792-85f0-75492bea587b"/>
+            <link rel="channel" title="IM News" type="x-im/channel"
+                  uuid="51e72abd-63ea-4aef-8edb-5248bbeefc2e"/>
+            <link rel="channel" title="Lavendel News" type="x-im/channel"
+                  uuid="a5e45638-e34f-4bd3-b7f5-491c0029c184"/>
+            <link rel="channel" title="Naviga News" type="x-im/channel"
+                  uuid="93eeec16-cf64-4377-ba39-3850ea09e78e"/>
+            <link rel="channel" title="Print Only" type="x-im/channel"
+                  uuid="8b8e101d-f67e-4242-baff-33747406bdb3"/>
+            <link rel="subject" title="Kalmar slott" type="x-im/place"
+                  uuid="7a1d5307-04e4-4b29-bbd0-925e69785fa1">
+                <data>
+                    <geometry>POINT(16.35546 56.65793)</geometry>
+                </data>
+            </link>
+            <link rel="subject" title="Kalmar" type="x-im/place"
+                  uuid="cc8d8a08-9d8e-4b40-9927-b3d0ce12b044">
+                <data>
+                    <geometry>POLYGON((16.25981 56.70763,16.23063 56.67841,16.32195
+                        56.65257,16.32573 56.64634,16.37208 56.65804,16.37517 56.71272,16.29414
+                        56.72629,16.25981 56.70763))
+                    </geometry>
+                </data>
+            </link>
+            <!--
+                TODO: Verify if it is possible to add more than one link-block with
+                @rel="related-go"
+
+                $.links
+                [
+                     {
+                         "rel": "related-geo",
+                         "title": "Kalmar",
+                         "type": "x-im/related-geo",
+                         "uuid": "cc8d8a08-9d8e-4b40-9927-b3d0ce12b044"
+                     },
+                     {
+                         "rel": "related-geo",
+                         "title": "Sweden",
+                         "type": "x-im/related-geo",
+                         "uuid": "25e426f0-7a84-4c4d-8233-25a31c4e3d42"
+                     }
+                 ]
+            -->
+            <link rel="related-geo" type="">
+                <data>
+                    <uuid title="Kalmar">cc8d8a08-9d8e-4b40-9927-b3d0ce12b044</uuid>
+                    <uuid title="Sweden">25e426f0-7a84-4c4d-8233-25a31c4e3d42</uuid>
+                    <uuid title="Kalmar slott">7a1d5307-04e4-4b29-bbd0-925e69785fa1</uuid>
+                    <uuid title="Öland">c55a609f-ac07-40c8-a44a-92aba53b62ed</uuid>
+                </data>
+            </link>
+            <link rel="subject" title="Skapa en story!" type="x-im/story"
+                  uuid="8e8eb25c-653e-499d-b1aa-b6b7726287b7"/>
+            <link rel="subject" title="[]" type="x-im/topic"
+                  uuid="e7f2e9e0-27e3-4061-87ba-cd9f2657b856"/>
+            <link rel="subject" title="My test topic" type="x-im/topic"
+                  uuid="57650b17-e5f7-411a-9921-8ff4687d7ecc"/>
+            <link rel="subject" title="Print only" type="x-im/content-profile"
+                  uuid="6afe1799-0e87-4080-bee1-c2ccb8475bef"/>
+            <link rel="subject" title="(work?)" type="x-im/category"
+                  uuid="4d83c843-0f04-4804-a3c4-c46366a13175"/>
+            <link rel="subject" title="Cool {} thingy" type="x-im/category"
+                  uuid="de03ae15-50ca-47a8-8b0a-adfff50e34aa"/>
+            <link rel="subject" title="| pipe it!" type="x-im/category"
+                  uuid="a6cf1e81-430d-4be0-8bf1-dee06b765c17"/>
+            <link rel="subject" title="test section" type="x-im/section"
+                  uuid="5832d20e-4959-4fd6-8434-0bb49f9ec4f9">
+                <links>
+                    <link rel="associated-with" title="Channel im" type="x-im/channel"
+                          uuid="90a0891b-2804-4c89-9515-d042c2f23e18"/>
+                </links>
+            </link>
+            <link rel="subject" title="Zlatan" type="x-im/topic"
+                  uuid="7e6ad41d-df23-4202-a6cb-38878b3a0118">
+                <links>
+                    <link rel="broader" title="Milan" type="x-im/topic"
+                          uuid="8fb8fd97-e4e3-4d50-b905-4fcba69963fd"/>
+                    <link rel="broader" title="Seria A" type="x-im/topic"
+                          uuid="a9d09ba6-0412-4d55-b423-50d830867ac8"/>
+                    <link rel="broader" title="Football" type="x-im/topic"
+                          uuid="c617c0ae-0226-4379-bd77-9d5c68d4c871"/>
+                </links>
+            </link>
+            <link rel="creator" title="Dev User" type="x-imid/user"
+                  uri="imid://user/sub/91dca1d9-9cc9-4ccd-9a38-0fab5766641a">
+                <links>
+                    <link rel="affiliation" title="naviga" type="x-imid/organisation"
+                          uri="imid://organisation/naviga">
+                        <links>
+                            <link rel="affiliation" title="imnews" type="x-imid/unit"
+                                  uri="imid://unit/imnews"/>
+                        </links>
+                    </link>
+                </links>
+            </link>
+            <link rel="author" title="O A" type="x-im/author"
+                  uuid="0fa58173-698f-4147-b14c-750ae9d400d9">
+                <data>
+                    <email>o.a@invalid.se</email>
+                    <firstName>o</firstName>
+                    <lastName>a</lastName>
+                    <phone>0730000000</phone>
+                    <facebookUrl>https://www.facebook.com/</facebookUrl>
+                    <twitterUrl>https://www.twitter.com</twitterUrl>
+                    <shortDescription>Developer</shortDescription>
+                    <longDescription>Senior developer</longDescription>
+                </data>
+            </link>
+            <link rel="subject" title="test section" type="x-im/section"
+                  uuid="5832d20e-4959-4fd6-8434-0bb49f9ec4f9"/>
+            <link rel="channel" title="Channel im" type="x-im/channel"
+                  uuid="90a0891b-2804-4c89-9515-d042c2f23e18"/>
+            <link rel="updater" title="P P" type="x-imid/user"
+                  uri="imid://user/sub/f69d188d-c401-4dbe-add2-a2e262f403c2">
+                <links>
+                    <link rel="affiliation" title="naviga" type="x-imid/organisation"
+                          uri="imid://organisation/naviga">
+                        <links>
+                            <link rel="affiliation" title="imnews" type="x-imid/unit"
+                                  uri="imid://unit/imnews"/>
+                        </links>
+                    </link>
+                </links>
+                <meta>
+                    <object type="foo/bar"/>
+                </meta>
+            </link>
+        </links>
+        <!-- $.created -->
+        <firstCreated>2020-03-20T12:24:31Z</firstCreated>
+        <!-- $.modified -->
+        <versionCreated>2020-03-20T13:14:45Z</versionCreated>
+        <!--
+            $.properties
+            [{
+                "name": "imext:configurableType",
+                "value": "2020-03-20"
+            }]
+        -->
+        <itemMetaExtProperty type="imext:configurableType" value="2020-03-20"/>
+        <!--
+            $.links[.rel="service", .type="qcode", .uri="imsection:ledare", .title="Ledare]
+        -->
+        <service qcode="imsection:ledare">
+            <name>Ledare</name>
+        </service>
+        <!-- $.uri -->
+        <itemMetaExtProperty type="imext:uri"
+                             value="im://article/5ace6734-f864-4c5f-8ff2-b1f9738ca257"/>
+        <!-- TODO: FILTER THIS OUT!!! -->
+        <edNote>Editorial note</edNote>
+    </itemMeta>
+    <contentMeta>
+        <!--
+            NOTE! In order to map these properties from navigadoc to correct "meta" in
+            xml (itemMeta (default) vs contentMeta), a lookup table is needed!
+
+            $.properties
+            [{
+                "name": "imext:header",
+                "value": "2020-03-20"
+            }]
+        -->
+        <contentMetaExtProperty type="imext:header" value="generictextfields-generictextfields"/>
+        <contentMetaExtProperty type="imext:subheader" value="generictextfields-subheader"/>
+        <contentMetaExtProperty type="imext:deck" value="generictextfields-deck"/>
+        <metadata xmlns="http://www.infomaker.se/newsml/1.0">
+            <!--
+                NOTE! In order to be able to put these <object/>s under contentMeta, a
+                lookup table must be used (default will be to put them under itemMeta).
+            -->
+            <!-- $.meta[.type="x-im/newsvalue"] -->
+            <object id="RYaudnAJj8gQ" type="x-im/newsvalue">
+                <data>
+                    <!--                    <score test="1">3</score>-->
+                    <score>3</score>
+                    <description>Hello</description>
+                    <!--                    <description>7D</description>-->
+                    <text>PT6H</text>
+                    <format>lifetimecode</format>
+                    <end/>
+                    <duration>604800</duration>
+                </data>
+            </object>
+            <!-- $.meta[.type="x-im/teaser"] -->
+            <object id="MjUsMjA1LDksMjI3" title="This is a teaser: header" type="x-im/teaser">
+                <!-- $.meta[.type="x-im/teaser"].data -->
+                <data>
+                    <title>This is a teaser: header</title>
+                    <text>This is a teaser: text</text>
+                    <subject>Teaser Subject</subject>
+                    <pushEnd>2020-03-20T00:00:00+01:00</pushEnd>
+                </data>
+                <links>
+                    <link rel="image" type="x-im/image"
+                          uri="im://image/HsXJtG4XM9vgrj8qHd67MrHXaPA.jpg"
+                          uuid="071e5296-2d5a-52d3-a7bf-777e8ec942dc">
+                        <data>
+                            <width>3000</width>
+                            <height>4500</height>
+                        </data>
+                    </link>
+                    <link rel="article" title="Fredagsartikeln från P" type="x-im/article"
+                          uuid="a6e9b829-526e-4d67-a218-2680a37ec658"/>
+                </links>
+                <!-- $.meta[.type="x-im/teaser"].properties (compare with properties on root level) -->
+                <properties>
+                    <property name="effect" value="yes"/>
+                    <property name="teaseroption" value="maybe"/>
+                </properties>
+            </object>
+        </metadata>
+        <!-- $.created -->
+        <contentCreated>2020-03-20T12:24:31Z</contentCreated>
+        <!-- $.modified -->
+        <contentModified>2020-03-20T13:14:45Z</contentModified>
+        <!-- $.links -->
+        <links xmlns="http://www.infomaker.se/newsml/1.0">
+            <!--
+                NOTE! In order to be able to map these links from navigadoc to xml a lookup table
+                is needed which will tell if these links should go under contentMeta (default should
+                be itemMeta).
+            -->
+            <!--
+                $.links
+                {
+                    "title": "Premium",
+                    "rel": "premium",
+                    "type": "x-im/premium",
+                    "uri": "im://premium"
+                }
+            -->
+            <link rel="premium" title="Premium" type="x-im/premium" uri="im://premium"/>
+            <link rel="articletype" title="Artikeltyp B" type="x-im/articletype"
+                  uri="im://articletype/articletype_b"/>
+        </links>
+    </contentMeta>
+    <contentSet>
+        <inlineXML>
+            <!--
+                @xml:lang = $.language
+                NOTE! that @xml:lang must exist as an attribute (with an empty string).
+            -->
+            <idf dir="ltr" xml:lang="en-US" xmlns="http://www.infomaker.se/idf/1.0">
+                <group type="body">
+                    <!--
+                        All elements should map to $.content[.type="@type"]
+                        NOTE that all elements (apart from those with special
+                        instructions) should have $.content[].data.format="html"
+                    -->
+                    <element id="headline-d1f5ac9f52fc17b4da89004c9c7493da" type="headline"
+                    >"everything!"-article for backend team
+                    </element>
+                    <element id="preamble-a5efff9f3af396a0b0f095f2284b9023" type="preamble">Based on
+                        Naviga template - note! NTB Scanpix and AP Media Plugins are missing from
+                        this article, we have no API keys
+                    </element>
+
+                    <element id="MTIyLDExNSwyMTMsMTk5" type="headline" variation="funny-headline"
+                    >Funny headline
+                    </element>
+
+                    <element id="MjM1LDE1OCwyMzMsNDk" type="body" variation="thin-paragraph">Thin
+                        paragrapgh
+                    </element>
+                    <element id="MTE0LDIxNCwxNzgsMTA" type="subheadline1">Subheadline</element>
+                    <element id="MTUwLDIyOSwxMTcsMTg2" type="subheadline2">Subheadline 2</element>
+                    <element id="MTg0LDE4NywyMjEsMTA4" type="subheadline3">Subheadline 3</element>
+                    <element id="MjA5LDE5OCw0OCwxMzE" type="subheadline4">Subheadline 4</element>
+                    <element id="MTg0LDEzNSwxNjksNTI" type="subheadline5">Subheadline 5</element>
+                    <element id="MjQ1LDIyMSwyMjYsMTEw" type="blockquote">"It's Going to Get Worse
+                        Before It Gets Better" - Piebald
+                    </element>
+                    <element id="MzEsMTM3LDE5NiwxMDE" type="dateline">Dateline</element>
+                    <element id="MTE2LDEwNSwxOTAsMTY0" type="drophead">Drophead</element>
+                    <element id="MjcsMTY3LDEwOSw1OA" type="fact-body">Factbody</element>
+                    <element id="NjQsMjEyLDI3LDM" type="pagedateline">Pagedateline</element>
+                    <element id="MTAyLDE4OSwxODEsMTU2" type="preamble">Preamble</element>
+                    <element id="MTI1LDIyMSwyMjQsODM" type="preleadin">Preleadin</element>
+                    <element id="MTIxLDczLDEzOCwyMjc" type="madmansrow">Madmansrow</element>
+                    <element id="MTY4LDEyNSwxODksMTYy" type="monospace">Monospace</element>
+
+                    <element id="list-3d9ecb1f8b7bb128264c3b825b1676ed" type="x-im/unordered-list">
+                        <list-item>This</list-item>
+                        <list-item>is</list-item>
+                        <list-item>unordered</list-item>
+                        <list-item>list</list-item>
+                    </element>
+                    <!-- Compare with x-im/unordered-list-->
+                    <element id="list-312b6e03cb4df189a711d4f39344a2ba" type="x-im/ordered-list">
+                        <list-item>and</list-item>
+                        <list-item>one</list-item>
+                        <list-item>ordered</list-item>
+                        <list-item>list</list-item>
+                    </element>
+
+                    <object id="table-a1a6cb5240638620900dae3eef50ef02" type="x-im/table">
+                        <data>
+                            <meta>Some meta</meta>
+                            <caption>Table caption</caption>
+                            <thead>
+                                <tr>
+                                    <th id="table-cell-40956d95dfd217e74de876e83de790de">h1</th>
+                                    <th id="table-cell-94746c333ba236f128e5b6c040612754">h2</th>
+                                    <th id="table-cell-a79792053d6d61d3a00d6947e5dcf561">h3</th>
+                                    <th id="table-cell-891c844687c381d02c87c0883126c22d">h4</th>
+                                    <th id="table-cell-4657791442f6f459a33859704028a4f5">h5</th>
+                                    <th id="table-cell-95b1469c89830dd4cb90a3684db6d259">h6</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td id="table-cell-67af12631b43e019f18be43e4cbac24f">Cell:
+                                        a1
+                                    </td>
+                                    <td id="table-cell-0120a5fba822b6e311c782c0cb22ef21">Cell:
+                                        b1
+                                    </td>
+                                    <td id="table-cell-0a961e037cacccd5b394971c4f2f27f2">Cell:
+                                        c1
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="table-cell-68ee8e4a647defcae8febe6bcab09280">Cell:
+                                        a2
+                                    </td>
+                                    <td id="table-cell-7765eb2f4cd93c137ff1aca08de2d443">Cell:
+                                        b2
+                                    </td>
+                                    <td id="table-cell-e94c7fc89be1222228b472cacc5dc2f5">Cell:
+                                        c2
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="table-cell-d0c7547e8944246c5754bdbd3b9dd587"/>
+                                    <td id="table-cell-e4f7d02fe0b9d9652d1c368277bf8364"/>
+                                    <td id="table-cell-042ca7cbdefef5bedccd557941d769d1"/>
+                                </tr>
+                            </tbody>
+                        </data>
+                    </object>
+                    <!-- $.content[.type="x-im/image]" -->
+                    <object id="MTk4LDIwMyw4NiwxOTU" type="x-im/image"
+                            uuid="246fc606-64ce-53ff-b1e9-d813c9680f3a">
+                        <links>
+                            <link rel="self" type="x-im/image"
+                                  uri="im://image/0SC2BIoacGclDU0mYZ7o3C3xpxc.jpg"
+                                  uuid="246fc606-64ce-53ff-b1e9-d813c9680f3a">
+                                <data>
+                                    <width>1000</width>
+                                    <height>1000</height>
+                                    <imageInstructions/>
+                                    <text/>
+                                    <credit/>
+                                </data>
+                                <links>
+                                    <link rel="crop" title="16:9" type="x-im/crop"
+                                          uri="im://crop/0.30375/0.08875/0.3625/0.20125"/>
+                                    <link rel="crop" title="8:5" type="x-im/crop"
+                                          uri="im://crop/0.085/0.0075/0.8075/0.50375"/>
+                                    <link rel="crop" title="4:3" type="x-im/crop"
+                                          uri="im://crop/0.24375/0.03375/0.485/0.36125"/>
+                                    <link rel="crop" title="1:1" type="x-im/crop"
+                                          uri="im://crop/0.345/0.0325/0.2875/0.2875"/>
+                                </links>
+                            </link>
+                        </links>
+                    </object>
+                    <!-- $.content[.type="x-im/image]" -->
+                    <object id="NzgsMjA4LDY1LDgw" type="x-im/image"
+                            uuid="439cc968-b423-5294-8410-ed487a6f0fd9">
+                        <links>
+                            <link rel="self" type="x-im/image"
+                                  uri="im://image/h8zNz9dTsjixcllsRs06_QRAV94.jpg"
+                                  uuid="439cc968-b423-5294-8410-ed487a6f0fd9">
+                                <data>
+                                    <width>500</width>
+                                    <height>355</height>
+                                    <imageInstructions/>
+                                    <text>This is an image with byline and credit + generic
+                                        props
+                                    </text>
+                                    <credit>O A</credit>
+                                </data>
+                                <links>
+                                    <link rel="author" title="O A" type="x-im/author"
+                                          uuid="0fa58173-698f-4147-b14c-750ae9d400d9">
+                                        <data>
+                                            <email>o.a@invalid.se</email>
+                                        </data>
+                                    </link>
+                                </links>
+                            </link>
+                        </links>
+                        <!-- $.meta[.type="x-im/image"].properties (compare with properties on root level) -->
+                        <properties>
+                            <property name="alignment" value="left"/>
+                            <property name="fullwidth" value="1"/>
+                            <property name="waffles" value="waffles"/>
+                        </properties>
+                    </object>
+
+                    <object id="im-imagegallery-0c9fcfce8fe0fd6fbc2f9e502b933b84"
+                            type="x-im/imagegallery" uuid="03538e82-f034-492e-bf1d-7653dc2ee089">
+                        <data>
+                            <text>This is an image gallery</text>
+                        </data>
+                        <links>
+                            <link rel="image" type="x-im/image"
+                                  uri="im://image/CLSxmyxN1gKfSprWPkUyvpFIhYY.jpg"
+                                  uuid="b23691e2-1271-5130-bf57-24a97a2965d1">
+                                <data>
+                                    <text>beard 1</text>
+                                    <height>800</height>
+                                    <width>800</width>
+                                </data>
+                                <links>
+                                    <link rel="author" title="O A" type="x-im/author"
+                                          uuid="0fa58173-698f-4147-b14c-750ae9d400d9">
+                                        <data>
+                                            <email>o.a@invalid.se</email>
+                                        </data>
+                                    </link>
+                                </links>
+                            </link>
+                            <link rel="image" type="x-im/image"
+                                  uri="im://image/Df-qacj9pOK3ZFMqhnDoIXO4xjY.jpg"
+                                  uuid="86159d0d-7098-5de6-8c77-77ae413e93da">
+                                <data>
+                                    <text>beard 2</text>
+                                    <height>800</height>
+                                    <width>800</width>
+                                </data>
+                                <links>
+                                    <link rel="author" title="O A" type="x-im/author"
+                                          uuid="0fa58173-698f-4147-b14c-750ae9d400d9">
+                                        <data>
+                                            <email>o.a@invalid.se</email>
+                                        </data>
+                                    </link>
+                                </links>
+                            </link>
+                            <link rel="image" type="x-im/image"
+                                  uri="im://image/PnecYCF5UDKtPidEdfpgpqFgxvw.jpg"
+                                  uuid="25c1087f-6c59-55a3-8c8c-c0ef61929ca5">
+                                <data>
+                                    <text>beard 3</text>
+                                    <height>684</height>
+                                    <width>1024</width>
+                                </data>
+                                <links>
+                                    <link rel="author" title="O A" type="x-im/author"
+                                          uuid="0fa58173-698f-4147-b14c-750ae9d400d9">
+                                        <data>
+                                            <email>o.a@invalid.se</email>
+                                        </data>
+                                    </link>
+                                </links>
+                            </link>
+                            <link rel="image" type="x-im/image"
+                                  uri="im://image/c06886rQC_2jSudHUKxOnzp5lbQ.jpg"
+                                  uuid="010e980d-e7ca-5560-a4c7-29cea2cd3cc5">
+                                <data>
+                                    <text>beard 4 (no byline)</text>
+                                    <height>500</height>
+                                    <width>500</width>
+                                </data>
+                            </link>
+                        </links>
+                    </object>
+                    <!-- $.content[.type="x-im/pdf"] -->
+                    <object id="MTQyLDIzNiw4OSw5Nw" type="x-im/pdf"
+                            uuid="09ed0285-9959-564c-95c2-3723147508bf">
+                        <links>
+                            <link rel="self" type="x-im/pdf"
+                                  uri="im://pdf/JBVNALft5Xqjg_T1FocMt1j20xQ.pdf"
+                                  uuid="09ed0285-9959-564c-95c2-3723147508bf">
+                                <data>
+                                    <text>test-pdf.pdf</text>
+                                    <title/>
+                                    <objectName>test-pdf.pdf</objectName>
+                                </data>
+                            </link>
+                        </links>
+                    </object>
+                    <!-- $.content[.type="x-im/htmlembed"] -->
+                    <object id="htmlembed-b2e04decd5fab60a7bd59191fb7c6e69" type="x-im/htmlembed">
+                        <data>
+                            <!-- In navigadoc remove CDATA (and append when going to newsml) -->
+                            <text><![CDATA[<!DOCTYPE html>
+                                <html lang="en">
+                                <head>
+                                <meta charset="UTF-8">
+                                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                <title>Document</title>
+                                </head>
+                                <body>
+                                <h1>Amazing embed code</h1>
+                                </body>
+                                </html>]]>
+                            </text>
+                            <format>html</format>
+                        </data>
+                    </object>
+                    <!--
+                    {
+                        "id": "NDgsMjQxLDE3NSwzNA",
+                        "type": "x-im/content-part",
+                        "title": "Fact: header",
+                        "data": {
+                            "caption": "Fact: image caption",
+                            "subject": "Fact: subject",
+                            "title": "Fact: header"
+                        },
+                        "content": [{
+                            "id": "paragraph-2c01da22f4ce596a2491eb0ab37b2477",
+                            "type": "x-im/paragraph",
+                            "data": {
+                                "text": "Fact: paragraph",
+                                "format": "html"
+                            }
+                        }],
+                        "links": [
+                            {
+                                "rel": "content-part",
+                                "uri": "im://content-part/fact"
+                            },
+                            {
+                                "rel": "image",
+                                "type": "x-im/image",
+                                "uri": "im://image/Qx7RlOeXvKfHP8Q1w_e3qcL0KOQ.jpg",
+                                "uuid": "f6480f31-6b2e-5858-ad8e-0b54e47d4000",
+                                "data": {
+                                    "width": 1000,
+                                    "height": 1500
+                                }
+                            }
+                        ]
+                    }
+                    -->
+                    <object id="NDgsMjQxLDE3NSwzNA" title="Fact: header" type="x-im/content-part"
+                            uuid="cca894e3-3791-425b-ab14-f21ec2502833">
+                        <data>
+                            <caption>Fact: image caption</caption>
+                            <title>Fact: header</title>
+                            <subject>Fact: subject</subject>
+                            <text format="idf">
+                                <element id="paragraph-2c01da22f4ce596a2491eb0ab37b2477" type="body"
+                                >Fact: paragraph
+                                </element>
+                            </text>
+                        </data>
+                        <links>
+                            <link rel="image" type="x-im/image"
+                                  uri="im://image/Qx7RlOeXvKfHP8Q1w_e3qcL0KOQ.jpg"
+                                  uuid="f6480f31-6b2e-5858-ad8e-0b54e47d4000">
+                                <data>
+                                    <width>1000</width>
+                                    <height>1500</height>
+                                </data>
+                            </link>
+                            <link rel="content-part" uri="im://content-part/fact"/>
+                        </links>
+                    </object>
+                    <!-- $.content[.type="x-im/content-part"] -->
+                    <object id="MTg0LDEyMywxNDEsMTkw" title="Summary" type="x-im/content-part"
+                            uuid="4b779dfe-cbb4-440e-8f63-b18bc93049f5">
+                        <data>
+                            <title>Summary</title>
+                            <subject>Summary: subject</subject>
+                        </data>
+                        <links>
+                            <link rel="content-part" uri="im://content-part/summary"/>
+                        </links>
+                    </object>
+                    <!-- $.content[.type="x-im/content-part"] -->
+                    <object id="NDEsMjIzLDUxLDk" title="Contentpart: Backgroud"
+                            type="x-im/content-part" uuid="61948d6c-164f-4abc-9fe3-54815c6145a4">
+                        <data>
+                            <title>Contentpart: Backgroud</title>
+                            <subject>Contentpart: Backgroud, custom label</subject>
+                            <customField>2020-03-20T00:00:00+01:00</customField>
+                            <customFieldTwo>Contentpart: Backgroud - custom field</customFieldTwo>
+                            <text format="idf">
+                                <element id="paragraph-121d522719ae3bc6c4d264a7577e7cf9" type="body"
+                                >Contentpart: Backgroud - paragraph
+                                </element>
+                            </text>
+                        </data>
+                        <links>
+                            <link rel="content-part" uri="im://content-part/background"/>
+                        </links>
+                    </object>
+                    <!-- $.content[.type="x-im/content-link"].links -->
+                    <object id="contentrelations-c94a67eadd64f553605bf706e41baf60"
+                            title="Nyaste artikeln av P" type="x-im/link"
+                            uuid="c4adc59f-eb43-463c-b870-53d82a71f6f8">
+                        <links>
+                            <link rel="self" type="x-im/article"
+                                  uuid="c4adc59f-eb43-463c-b870-53d82a71f6f8"/>
+                        </links>
+                    </object>
+                    <!--
+                        NOTE! FILTER THIS OUT! I.e. the <ins>...</ins> should be removed.
+
+                        This should be persisted elsewhere, not in document!
+                        MUST be documented as a known-issue...
+
+                        TODO: Check if this is actually filtered in "fronts" (AGP stage?)
+                    -->
+                    <element id="MjQ3LDExLDIyOCw3Mg" type="body">Paragraph with <ins
+                            collapsed="false" creationdate="2020-03-20T13:29:47"
+                            id="inlinenote-acea9215ad8297bb59a015fcf3050505"
+                            modificationdate="2020-03-20T13:29:47"
+                            username="p.a@invalid.se">inline notes
+                    </ins> that we add
+                        like this
+                    </element>
+                    <!-- $.content[.type="x-im/paragraph"] -->
+                    <element id="paragraph-22b2b5044fd6476620839cdb89914f12" type="body">Paragraph
+                        with special characters @ÈÆÛĘĻƢǄƜƄǮɆȵȲȸψϡϠ‱⁐ϬϮℲ℺ℹↂ∞∰≱⊗
+                    </element>
+                    <!-- $.content[.type="x-im/paragraph"] -->
+                    <element id="paragraph-d0b06498a151579943e1b552fe76b071" type="body">Paragraph
+                        <a download="Name of file-field" href="https://giphy.com/explore/cat"
+                           id="link-6a400eb940f05d6217d6d4a11c0c135e" target="_blank"
+                           title="Very important">with link
+                        </a>
+                        in it, very important
+                        link
+                    </element>
+                    <!-- $.content[.type="x-im/paragraph"] -->
+                    <element id="paragraph-5782ef76a2a7b5ef33d75093a696dc3a" type="body">Paragraph
+                        with <strong id="strong-df976eb1ecc572963141dc478e6977fa">bold</strong> and
+                        <em id="emphasis-36d6b546655b90dd6f62f6cd2981bc57">italic</em>
+                        text, and
+                        a <mark id="mark-af52cf2b68be22dca484f886834e3478">marker</mark> just for
+                        the sake of it, and a
+                        <code id="code-a2ea119fdd6a135137fa04448c58987d"
+                        >code
+                        </code>
+                    </element>
+                    <!-- $.content[.type="x-im/mapembed"] -->
+                    <object id="OTksMTYyLDIwMywyMDg" type="x-im/mapembed">
+                        <data>
+                            <zoom>11</zoom>
+                            <geometry>POINT (16.3567791 56.6634447)</geometry>
+                        </data>
+                    </object>
+                    <!-- $.content[.type="x-im/iframely"] -->
+                    <object id="iframely-85121663a5168010771f521ca32a5238" type="x-im/iframely"
+                            url="https://www.google.com/mymaps/viewer?mid=1DDxJ8h2StycidhDPSJ2eF4KIyWc&amp;hl=en_US">
+                        <data>
+                            <title>Helvete - Google My Maps</title>
+                            <!-- Strip CDATA going to navigadoc and put it in again going to newsml-->
+                            <embedCode>
+                                <![CDATA[<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 75%;"><iframe src="https://www.google.com/maps/d/embed?mid=1DDxJ8h2StycidhDPSJ2eF4KIyWc&amp;source=iframely" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen></iframe></div>]]></embedCode>
+                        </data>
+                        <links>
+                            <link rel="alternate" title="Helvete - Google My Maps from undefined"
+                                  type="text/html"
+                                  url="https://www.google.com/mymaps/viewer?mid=1DDxJ8h2StycidhDPSJ2eF4KIyWc&amp;hl=en_US"/>
+                            <link rel="alternate" type="image/jpg"
+                                  url="https://www.google.com/maps/d/thumbnail?mid=1DDxJ8h2StycidhDPSJ2eF4KIyWc&amp;hl=en_US">
+                                <data>
+                                    <width>504</width>
+                                    <height>520</height>
+                                </data>
+                            </link>
+                        </links>
+                    </object>
+                    <!-- $.content[.type="x-im/iframely"] -->
+                    <object id="iframely-422034dc44bcb2372e5b3c3536980784" type="x-im/iframely"
+                            url="https://open.spotify.com/playlist/0nEi9oGlDjrSPzfk8SXhnt">
+                        <data>
+                            <title>Black Metal, a playlist by Stian Sætrum on Spotify</title>
+                            <embedCode>
+                                <![CDATA[<iframe src="https://open.spotify.com/embed/playlist/0nEi9oGlDjrSPzfk8SXhnt" style="border: 0; width: 100%; height: 380px;" allowfullscreen allow="encrypted-media"></iframe>]]></embedCode>
+                        </data>
+                        <links>
+                            <link rel="alternate"
+                                  title="Black Metal, a playlist by Stian Sætrum on Spotify from Spotify"
+                                  type="text/html"
+                                  url="https://open.spotify.com/playlist/0nEi9oGlDjrSPzfk8SXhnt">
+                                <data>
+                                    <description>A playlist featuring Urgehal, Burzum, Darkthrone,
+                                        and others
+                                    </description>
+                                    <provider>Spotify</provider>
+                                </data>
+                            </link>
+                            <link rel="alternate" type="image/jpg"
+                                  url="https://mosaic.scdn.co/640/ab67616d0000b27314162dce63b77ff4d37a25d3ab67616d0000b2739967f4abbc1c1acc11656f34ab67616d0000b273b63cf431800e21f6c249d314ab67616d0000b273ffab1b7c7edbeded01672dc1">
+                                <data>
+                                    <width>640</width>
+                                    <height>640</height>
+                                </data>
+                            </link>
+                        </links>
+                    </object>
+                    <!-- $.content[.type="x-im/youtube"] -->
+                    <object id="youtubeembed-dddbe06d1d2d0b6ea61ad47818698b1d" type="x-im/youtube"
+                            uri="https://www.youtube.com/watch?v=fp-52d4HxtY"
+                            url="https://www.youtube.com/watch?v=fp-52d4HxtY">
+                        <data>
+                            <start>0</start>
+                        </data>
+                        <links>
+                            <link rel="alternate"
+                                  title="lydonjr postade en video - Spinning Seal - GifSound"
+                                  type="text/html" url="https://www.youtube.com/watch?v=fp-52d4HxtY">
+                                <data>
+                                    <context>Video</context>
+                                    <provider>YouTube</provider>
+                                </data>
+                            </link>
+                            <link rel="alternate" type="image/jpg"
+                                  url="https://i.ytimg.com/vi/fp-52d4HxtY/hqdefault.jpg">
+                                <data>
+                                    <width>480</width>
+                                    <height>360</height>
+                                </data>
+                            </link>
+                        </links>
+                    </object>
+                    <!-- $.content[.type="x-im/socialembed"] -->
+                    <object id="socialembed-99d0145ee6193b9ad0aad266eff3a6a3"
+                            type="x-im/socialembed">
+                        <links>
+                            <link rel="self" type="x-im/instagram"
+                                  uri="im://instagram/2267116455921699567_12345678"
+                                  url="https://www.instagram.com/p/B92amerp8rv/?utm_source=ig_web_button_share_sheet"/>
+                            <link rel="alternate"
+                                  title="wolves.and.sorcery postade en bild på Instagram. What is up guys?&#xa; Unfortunately I don't have too much time to post today, so I leave you with this amazing picture of a couple of weirdos walking around in the streets of London &#x1f525;&#x1f525;&#xa;-&#xa;Please stay safe &#x1f918;&#x1f918;&#xa;- &#xa;Picture by @metalhammeruk &#xa;Reposted from @kingovhellofficial"
+                                  type="text/html"
+                                  url="https://www.instagram.com/p/B92amerp8rv/?utm_source=ig_web_button_share_sheet">
+                                <data>
+                                    <context>Social</context>
+                                    <provider>Instagram</provider>
+                                </data>
+                            </link>
+                            <link rel="alternate" type="image/jpg"
+                                  url="https://instagram.com/p/B92amerp8rv/media/?size=l">
+                                <data>
+                                    <width>640</width>
+                                    <height>640</height>
+                                </data>
+                                <links>
+                                    <link rel="self" type="x-im/instagram"
+                                          uri="im://instagram/2267116455921699567_23456789"
+                                          url="https://www.instagram.com/p/B92amerp8rv/?utm_source=ig_web_button_share_sheet"/>
+                                    <link rel="alternate"
+                                          title="wolves.and.sorcery postade en bild på Instagram. What is up guys?&#xa; Unfortunately I don't have too much time to post today, so I leave you with this amazing picture of a couple of weirdos walking around in the streets of London &#x1f525;&#x1f525;&#xa;-&#xa;Please stay safe &#x1f918;&#x1f918;&#xa;- &#xa;Picture by @metalhammeruk &#xa;Reposted from @kingovhellofficial"
+                                          type="text/html"
+                                          url="https://www.instagram.com/p/B92amerp8rv/?utm_source=ig_web_button_share_sheet">
+                                        <data>
+                                            <context>Layer Three</context>
+                                            <provider>Instagram</provider>
+                                        </data>
+                                    </link>
+                                    <link rel="alternate" type="image/jpg"
+                                          url="https://instagram.com/p/B92amerp8rv/media/?size=l">
+                                        <data>
+                                            <width>640</width>
+                                            <height>640</height>
+                                        </data>
+                                        <links>
+                                            <link rel="self" type="x-im/instagram"
+                                                  uri="im://instagram/2267116455921699567_30792284366"
+                                                  url="https://www.instagram.com/p/B92amerp8rv/?utm_source=ig_web_button_share_sheet"/>
+                                            <link rel="alternate"
+                                                  title="wolves.and.sorcery postade en bild på Instagram. What is up guys?&#xa; Unfortunately I don't have too much time to post today, so I leave you with this amazing picture of a couple of weirdos walking around in the streets of London &#x1f525;&#x1f525;&#xa;-&#xa;Please stay safe &#x1f918;&#x1f918;&#xa;- &#xa;Picture by @metalhammeruk &#xa;Reposted from @kingovhellofficial"
+                                                  type="text/html"
+                                                  url="https://www.instagram.com/p/B92amerp8rv/?utm_source=ig_web_button_share_sheet">
+                                                <data>
+                                                    <context>Layer 4</context>
+                                                    <provider>Instagram</provider>
+                                                </data>
+                                            </link>
+                                            <link rel="alternate" type="image/jpg"
+                                                  url="https://instagram.com/p/B92amerp8rv/media/?size=l">
+                                                <data>
+                                                    <width>640</width>
+                                                    <height>640</height>
+                                                </data>
+                                            </link>
+                                        </links>
+                                    </link>
+                                </links>
+                            </link>
+                        </links>
+                        <meta>
+                            <object uuid="uuid" uri="http://www.my.com/flammas/cd"
+                                  url="http://www.my.com/ac/caelumque"
+                                  title="title" rel="rel" name="name" value="value" contenttype="contenttype">
+                                <data>
+                                    <AnyElement/>
+                                </data>
+                                <links>
+                                    <link rel="self" type="x-im/instagram"
+                                          uri="im://instagram/2267116455921699567_23456789"
+                                          url="https://www.instagram.com/p/B92amerp8rv/?utm_source=ig_web_button_share_sheet"/>
+                                    <link rel="alternate"
+                                          title="wolves.and.sorcery postade en bild på Instagram. What is up guys?&#xa; Unfortunately I don't have too much time to post today, so I leave you with this amazing picture of a couple of weirdos walking around in the streets of London &#x1f525;&#x1f525;&#xa;-&#xa;Please stay safe &#x1f918;&#x1f918;&#xa;- &#xa;Picture by @metalhammeruk &#xa;Reposted from @kingovhellofficial"
+                                          type="text/html"
+                                          url="https://www.instagram.com/p/B92amerp8rv/?utm_source=ig_web_button_share_sheet">
+                                        <data>
+                                            <context>Layer Three</context>
+                                            <provider>Instagram</provider>
+                                        </data>
+                                        <meta>
+                                            <object uuid="uuid" uri="http://www.my.com/flammas/cd"
+                                                  url="http://www.my.com/ac/caelumque"
+                                                  title="title" rel="rel" name="name" value="value"
+                                                  contenttype="contenttype">
+                                                <data>
+                                                    <AnyElement/>
+                                                </data>
+                                                <links>
+                                                    <link rel="self" type="x-im/instagram"
+                                                          uri="im://instagram/2267116455921699567_23456789"
+                                                          url="https://www.instagram.com/p/B92amerp8rv/?utm_source=ig_web_button_share_sheet"/>
+                                                    <link rel="alternate"
+                                                          title="wolves.and.sorcery postade en bild på Instagram. What is up guys?&#xa; Unfortunately I don't have too much time to post today, so I leave you with this amazing picture of a couple of weirdos walking around in the streets of London &#x1f525;&#x1f525;&#xa;-&#xa;Please stay safe &#x1f918;&#x1f918;&#xa;- &#xa;Picture by @metalhammeruk &#xa;Reposted from @kingovhellofficial"
+                                                          type="text/html"
+                                                          url="https://www.instagram.com/p/B92amerp8rv/?utm_source=ig_web_button_share_sheet">
+                                                        <data>
+                                                            <context>Layer Three</context>
+                                                            <provider>Instagram</provider>
+                                                        </data>
+                                                    </link>
+                                                </links>
+                                                <content/>
+                                            </object>
+                                        </meta>
+                                    </link>
+                                </links>
+                                <meta>
+                                    <object>
+                                        <data>
+                                            <string3>string</string3>
+                                        </data>
+                                    </object>
+                                </meta>
+                            </object>
+                            <object name="mname1" value="mvalue1"/>
+                            <object name="mname2" value="mvalue2"/>
+                            <object name="mname3" value="mvalue3"/>
+                            <object name="mname4" value="mvalue4"/>
+                            <object>
+                                <meta>
+                                    <object name="mname11" value="mvalue11"/>
+                                    <object name="mname21" value="mvalue21"/>
+                                    <object name="mname31" value="mvalue31"/>
+                                    <object name="mname41" value="mvalue41"/>
+                                </meta>
+                            </object>
+                            <object>
+                                <data>
+                                    <string4>string</string4>
+                                </data>
+                            </object>
+                        </meta>
+                    </object>
+                    <!-- $.content[.type="x-im/socialembed"] -->
+                    <object id="socialembed-d0960965a4e6d707aa966ecadae3130a"
+                            type="x-im/socialembed">
+                        <links>
+                            <link rel="self" type="x-im/tweet" uri="im://tweet/1238195000023941124"
+                                  url="https://twitter.com/metalinsider/status/1238195000023941124"/>
+                            <link rel="alternate" title="MetalInsider.net skrev på Twitter"
+                                  type="text/html"
+                                  url="https://twitter.com/metalinsider/status/1238195000023941124">
+                                <data>
+                                    <context>Social</context>
+                                    <provider>Twitter</provider>
+                                </data>
+                            </link>
+                        </links>
+                    </object>
+                </group>
+            </idf>
+        </inlineXML>
+    </contentSet>
+</newsItem>

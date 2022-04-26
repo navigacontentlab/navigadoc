@@ -1,0 +1,10 @@
+image: golang:1.17-alpine
+
+pipelines:
+  default:
+    - step:
+        script:
+          - apk add build-base
+          - go test -short -v ./...
+          - go install github.com/golangci/golangci-lint/cmd/golangci-lint@v1.45.2
+          - golangci-lint run ./...

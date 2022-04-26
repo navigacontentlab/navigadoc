@@ -1,0 +1,167 @@
+{
+  "$id": "http://navigalobal.com/navigadoc/schema",
+  "definitions": {
+    "block": {
+      "properties": {
+        "content": {
+          "items": {
+            "$ref": "#/definitions/block"
+          },
+          "type": "array"
+        },
+        "contentType": {
+          "type": "string"
+        },
+        "data": {
+          "type": "object"
+        },
+        "id": {
+          "type": "string"
+        },
+        "links": {
+          "items": {
+            "$ref": "#/definitions/block"
+          },
+          "type": "array"
+        },
+        "meta": {
+          "items": {
+            "$ref": "#/definitions/block"
+          },
+          "type": "array"
+        },
+        "name": {
+          "type": "string"
+        },
+        "rel": {
+          "type": "string"
+        },
+        "role": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "uri": {
+          "format": "uri",
+          "type": "string"
+        },
+        "url": {
+          "format": "uri",
+          "type": "string"
+        },
+        "uuid": {
+          "pattern": "[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{12}",
+          "type": "string"
+        },
+        "value": {
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "property": {
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "parameters": {
+          "type": "object"
+        },
+        "value": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "name"
+      ],
+      "type": "object"
+    }
+  },
+  "description": "Navigadoc Schema",
+  "properties": {
+    "content": {
+      "items": {
+        "$ref": "#/definitions/block"
+      },
+      "type": "array"
+    },
+    "created": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "language": {
+      "type": "string"
+    },
+    "links": {
+      "items": {
+        "$ref": "#/definitions/block"
+      },
+      "type": "array"
+    },
+    "meta": {
+      "items": {
+        "$ref": "#/definitions/block"
+      },
+      "type": "array"
+    },
+    "modified": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "path": {
+      "type": "string"
+    },
+    "properties": {
+      "items": {
+        "$ref": "#/definitions/property"
+      },
+      "type": "array"
+    },
+    "provider": {
+      "type": "string"
+    },
+    "published": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "source": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "unpublished": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "uri": {
+      "format": "uri",
+      "type": "string"
+    },
+    "url": {
+      "format": "uri",
+      "type": "string"
+    },
+    "uuid": {
+      "pattern": "[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{12}",
+      "type": "string"
+    }
+  },
+  "required": [
+    "uuid",
+    "type",
+    "created"
+  ],
+  "title": "Navigadoc",
+  "type": "object"
+}

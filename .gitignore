@@ -1,0 +1,10 @@
+.history
+node_modules
+_tools
+.vscode
+.idea
+.env
+.DS_Store
+output.*
+bin
+testdebug

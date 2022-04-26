@@ -1,0 +1,913 @@
+{
+  "text-options": {
+    "x-im/test-plugin": {
+      "type": "x-im/test-plugin",
+      "isElement": false,
+      "attributes": {
+        "astext": {
+          "value-handling": "",
+          "value-attribute": ""
+        },
+        "asxml": {
+          "value-handling": "xml",
+          "value-attribute": ""
+        },
+        "ascdata": {
+          "value-handling": "cdata",
+          "value-attribute": ""
+        },
+        "asattribute": {
+          "value-handling": "attribute",
+          "value-attribute": ""
+        }
+      },
+      "options": null
+    },
+    "acme/categories": {
+      "type": "acme/categories",
+      "isElement": false,
+      "attributes": {
+        "id": {
+          "value-handling": "",
+          "value-attribute": ""
+        },
+        "name": {
+          "value-handling": "",
+          "value-attribute": ""
+        },
+        "ontology_name": {
+          "value-handling": "",
+          "value-attribute": ""
+        },
+        "ontology_uuid": {
+          "value-handling": "",
+          "value-attribute": ""
+        },
+        "primary": {
+          "value-handling": "attribute",
+          "value-attribute": ""
+        },
+        "relevance": {
+          "value-handling": "",
+          "value-attribute": ""
+        },
+        "slug": {
+          "value-handling": "",
+          "value-attribute": ""
+        },
+        "text": {
+          "value-handling": "",
+          "value-attribute": ""
+        },
+        "type": {
+          "value-handling": "attribute",
+          "value-attribute": ""
+        }
+      },
+      "options": null
+    },
+    "acme/aside": {
+      "type": "acme/aside",
+      "isElement": false,
+      "attributes": {
+        "element": {
+          "value-handling": "xml",
+          "value-attribute": ""
+        },
+        "id": {
+          "value-handling": "attribute",
+          "value-attribute": "id"
+        },
+        "type": {
+          "value-handling": "attribute",
+          "value-attribute": "type"
+        }
+      },
+      "options": null
+    },
+    "acme/company": {
+      "type": "acme/company",
+      "isElement": false,
+      "attributes": {
+        "name": {
+          "value-handling": "",
+          "value-attribute": ""
+        },
+        "businessId": {
+          "value-handling": "",
+          "value-attribute": ""
+        }
+      },
+      "options": null
+    },
+    "acme/persons": {
+      "type": "acme/persons",
+      "isElement": false,
+      "attributes": {
+        "name": {
+          "value-handling": "",
+          "value-attribute": ""
+        },
+        "title": {
+          "value-handling": "",
+          "value-attribute": ""
+        }
+      },
+      "options": null
+    },
+    "acme/release-meta": {
+      "type": "acme/release-meta",
+      "isElement": false,
+      "attributes": {
+        "regulatory": {
+          "value-handling": "",
+          "value-attribute": ""
+        }
+      },
+      "options": null
+    },
+    "acme/tol": {
+      "type": "acme/tol",
+      "isElement": false,
+      "attributes": {
+        "version": {
+          "value-handling": "attribute",
+          "value-attribute": "version"
+        },
+        "industry": {
+          "value-handling": "xml",
+          "value-attribute": ""
+        }
+      },
+      "options": null
+    },
+    "acme/seo-title": {
+      "type": "acme/seo-title",
+      "isElement": false,
+      "attributes": {
+        "title": {
+          "value-handling": "xml",
+          "value-attribute": ""
+        }
+      },
+      "options": null
+    },
+    "ford/pre": {
+      "type": "ford/pre",
+      "isElement": true,
+      "attributes": {
+        "text": {
+          "value-handling": "xml",
+          "value-attribute": ""
+        }
+      },
+      "options": null
+    },
+    "gm/newsnotification": {
+      "type": "gm/newsnotification",
+      "isElement": false,
+      "attributes": {
+        "type": {
+          "value-handling": "",
+          "value-attribute": ""
+        },
+        "content": {
+          "value-handling": "",
+          "value-attribute": ""
+        },
+        "important": {
+          "value-handling": "",
+          "value-attribute": ""
+        },
+        "id": {
+          "value-handling": "",
+          "value-attribute": ""
+        },
+        "modified": {
+          "value-handling": "",
+          "value-attribute": ""
+        },
+        "status": {
+          "value-handling": "",
+          "value-attribute": ""
+        }
+      },
+      "options": null
+    },
+    "gm/functional-tags/tags": {
+      "type": "gm/functional-tags/tags",
+      "isElement": false,
+      "attributes": {
+        "text": {
+          "value-handling": "",
+          "value-attribute": ""
+        },
+        "id": {
+          "value-handling": "",
+          "value-attribute": ""
+        }
+      },
+      "options": null
+    },
+    "acme/ordered-list": {
+      "type": "acme/ordered-list",
+      "isElement": true,
+      "attributes": null,
+      "options": null
+    },
+    "acme/unordered-list": {
+      "type": "acme/unordered-list",
+      "isElement": true,
+      "attributes": null,
+      "options": null
+    },
+    "acme/isin": {
+      "type": "acme/isin",
+      "isElement": false,
+      "attributes": null,
+      "options": null
+    },
+    "vignette": {
+      "type": "vignette",
+      "isElement": true,
+      "attributes": null,
+      "options": null
+    },
+    "dateline": {
+      "type": "dateline",
+      "isElement": true,
+      "attributes": null,
+      "options": null
+    },
+    "ford/fast-metadata": {
+      "type": "ford/fast-metadata",
+      "isElement": false,
+      "attributes": {
+        "id": {
+          "value-handling": "",
+          "value-attribute": ""
+        },
+        "name": {
+          "value-handling": "",
+          "value-attribute": ""
+        },
+        "ontology_name": {
+          "value-handling": "",
+          "value-attribute": ""
+        },
+        "primary": {
+          "value-handling": "attribute",
+          "value-attribute": ""
+        },
+        "relevance": {
+          "value-handling": "",
+          "value-attribute": ""
+        },
+        "slug": {
+          "value-handling": "",
+          "value-attribute": ""
+        },
+        "text": {
+          "value-handling": "",
+          "value-attribute": ""
+        },
+        "type": {
+          "value-handling": "attribute",
+          "value-attribute": ""
+        },
+        "number": {
+          "value-handling": "",
+          "value-attribute": ""
+        },
+        "subject": {
+          "value-handling": "xml",
+          "value-attribute": ""
+        },
+        "storystatus": {
+          "value-handling": "xml",
+          "value-attribute": ""
+        }
+      },
+      "options": null
+    },
+    "ford/categories": {
+      "type": "ford/categories",
+      "isElement": false,
+      "attributes": {
+        "id": {
+          "value-handling": "",
+          "value-attribute": ""
+        },
+        "name": {
+          "value-handling": "",
+          "value-attribute": ""
+        },
+        "ontology_name": {
+          "value-handling": "",
+          "value-attribute": ""
+        },
+        "primary": {
+          "value-handling": "attribute",
+          "value-attribute": ""
+        },
+        "relevance": {
+          "value-handling": "",
+          "value-attribute": ""
+        },
+        "slug": {
+          "value-handling": "",
+          "value-attribute": ""
+        },
+        "text": {
+          "value-handling": "",
+          "value-attribute": ""
+        },
+        "type": {
+          "value-handling": "attribute",
+          "value-attribute": ""
+        }
+      },
+      "options": null
+    },
+    "x-gm/textsize": {
+      "type": "x-gm/textsize",
+      "isElement": false,
+      "attributes": {
+        "actual": {
+          "value-handling": "attribute",
+          "value-attribute": ""
+        },
+        "chars": {
+          "value-handling": "attribute",
+          "value-attribute": ""
+        },
+        "planned": {
+          "value-handling": "attribute",
+          "value-attribute": ""
+        },
+        "words": {
+          "value-handling": "attribute",
+          "value-attribute": ""
+        }
+      },
+      "options": null
+    },
+    "preline": {
+      "type": "preline",
+      "isElement": true
+    },
+    "subheadline": {
+      "type": "subheadline",
+      "isElement": true
+    },
+    "x-im/mixedcase": {
+      "type": "x-im/mixedcase",
+      "isElement": false,
+      "attributes": {
+        "caption": {
+          "value-handling": "xml",
+          "value-attribute": ""
+        }
+      },
+      "options": null
+    }
+  },
+  "qcode-type": [
+  ],
+  "assignment-qcode-type": [
+  ],
+  "concept-qcode-type": [
+    {
+      "qcode": "cpnat:person",
+      "type": "x-im/editor"
+    }
+  ],
+  "status": [
+  ],
+  "element-type": [
+  ],
+  "property-type": [
+  ],
+  "link-exceptions": [
+    {
+      "type": "custom/foo",
+      "rel": [],
+      "section": [
+        "contentmeta"
+      ]
+    },
+    {
+      "type": "custom/bar",
+      "rel": [],
+      "section": [
+        "contentmeta"
+      ]
+    },
+    {
+      "type": "x-gm/articlecontent",
+      "rel": [],
+      "section": [
+        "contentmeta"
+      ]
+    },
+    {
+      "type": "x-gm/articlecontenttype",
+      "rel": [],
+      "section": [
+        "contentmeta"
+      ]
+    },
+    {
+      "type": "x-gm/tagassist",
+      "rel": [],
+      "section": [
+        "contentmeta"
+      ]
+    },
+    {
+      "type": "x-gm/showcontentexplanation",
+      "rel": [],
+      "section": [
+        "contentmeta"
+      ]
+    },
+    {
+      "type": "x-gm/textsize",
+      "rel": [],
+      "section": [
+        "contentmeta"
+      ]
+    },
+    {
+      "type": "x-gm/comments",
+      "rel": [],
+      "section": [
+        "contentmeta"
+      ]
+    }
+  ],
+  "object-exceptions": [
+    {
+      "type": "x-cu/topic-info",
+      "rel": [],
+      "section": [
+        "concept"
+      ]
+    }
+  ],
+  "property-exceptions": [
+    {
+      "type": "test-property",
+      "rel": [],
+      "section": [
+        "contentmeta"
+      ]
+    },
+    {
+      "type": "asn:property",
+      "rel": [],
+      "section": [
+        "planning"
+      ]
+    }
+  ],
+  "data-conversions": [
+    {
+      "type": "acme/categories",
+      "destination": "link",
+      "elements": [
+        {
+          "name": "category",
+          "type": "acme/categories",
+          "rel": "category",
+          "attributes": [
+            "primary",
+            "type"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "acme/publicationchannel",
+      "destination": "link",
+      "elements": [
+        {
+          "name": "category",
+          "type": "acme/publicationchannel",
+          "rel": "category",
+          "attributes": [
+            "primary",
+            "type"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "ford/categories",
+      "destination": "link",
+      "elements": [
+        {
+          "name": "category",
+          "type": "ford/categories",
+          "rel": "category",
+          "attributes": [
+            "primary"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "ford/fast-metadata",
+      "destination": "link",
+      "elements": [
+        {
+          "name": "category",
+          "type": "ford/fast-metadata",
+          "rel": "category",
+          "attributes": [
+            "primary"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "gm/functional-tags/tags",
+      "destination": "link",
+      "elements": [
+        {
+          "name": "tag",
+          "type": "gm/functional-tags/tags",
+          "rel": "tag",
+          "attributes": [
+            "primary"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "acme/qbrick-video",
+      "destination": "link",
+      "elements": [
+        {
+          "name": "tag",
+          "type": "acme/qbrick-video",
+          "rel": "tag",
+          "attributes": [
+            "primary"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "acme/aside",
+      "destination": "link",
+      "data-type": "idf",
+      "elements": []
+    },
+    {
+      "type": "acme/companies",
+      "destination": "link",
+      "data-type": "blob",
+      "elements": []
+    },
+    {
+      "type": "acme/persons",
+      "destination": "link",
+      "elements": [
+        {
+          "name": "person",
+          "type": "acme/persons",
+          "rel": "person",
+          "attributes": [
+          ]
+        }
+      ]
+    },
+    {
+      "type": "acme/person",
+      "destination": "link",
+      "elements": [
+        {
+          "name": "person",
+          "type": "acme/person",
+          "rel": "person",
+          "attributes": [
+          ]
+        }
+      ]
+    },
+    {
+      "type": "acme/contentsource",
+      "destination": "link",
+      "data-type": "blob",
+      "elements": [
+      ]
+    },
+    {
+      "type": "acme/tol",
+      "destination": "link",
+      "data-type": "blob",
+      "elements": [
+        {
+          "name": "tol",
+          "type": "acme/tol",
+          "rel": "tol",
+          "attributes": [
+            "version"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "acme/copyright",
+      "destination": "link",
+      "data-type": "blob",
+      "elements": [
+        {
+          "name": "copyright",
+          "type": "acme/copyright",
+          "rel": "copyright",
+          "attributes": [
+          ]
+        }
+      ]
+    },
+    {
+      "type": "acme/isin",
+      "destination": "link",
+      "data-type": "blob",
+      "elements": [
+      ]
+    },
+    {
+      "type": "acme/seo-title",
+      "destination": "link",
+      "data-type": "blob",
+      "elements": [
+      ]
+    },
+    {
+      "type": "acme/ordered-list",
+      "destination": "link",
+      "data-type": "blob",
+      "elements": [
+      ]
+    },
+    {
+      "type": "acme/unordered-list",
+      "destination": "link",
+      "data-type": "blob",
+      "elements": [
+      ]
+    },
+    {
+      "type": "acme/jw-video",
+      "destination": "link",
+      "data-type": "blob",
+      "elements": [
+      ]
+    },
+    {
+      "type": "acme/themes",
+      "destination": "link",
+      "elements": [
+        {
+          "name": "theme",
+          "type": "acme/themes",
+          "rel": "theme",
+          "attributes": [
+          ]
+        }
+      ]
+    },
+    {
+      "type": "gm/newsnotification",
+      "destination": "link",
+      "elements": [
+        {
+          "name": "notification",
+          "type": "gm/newsnotification",
+          "rel": "notification",
+          "attributes": [
+          ]
+        },
+        {
+          "name": "person",
+          "type": "gm/newsnotification",
+          "rel": "person",
+          "attributes": [
+          ]
+        }
+      ]
+    },
+    {
+      "type": "gm/functional-tags/tags",
+      "destination": "link",
+      "elements": [
+        {
+          "name": "tag",
+          "type": "gm/functional-tags/tags",
+          "rel": "tag",
+          "attributes": [
+          ]
+        }
+      ]
+    },
+    {
+      "type": "gm/article-banners",
+      "destination": "link",
+      "elements": [
+        {
+          "name": "banner",
+          "type": "gm/article-banners",
+          "rel": "banner",
+          "attributes": [
+          ]
+        }
+      ]
+    },
+    {
+      "type": "ford/fast-metadata",
+      "destination": "link",
+      "elements": [
+        {
+          "name": "category",
+          "type": "ford/fast-metadata",
+          "rel": "category",
+          "attributes": [
+            "primary"
+          ]
+        },
+        {
+          "name": "issue",
+          "type": "ford/fast-metadata",
+          "rel": "issue",
+          "attributes": [
+          ]
+        },
+        {
+          "name": "contentsponsor",
+          "type": "ford/fast-metadata",
+          "rel": "contentsponsor",
+          "attributes": [
+          ]
+        }
+      ]
+    },
+    {
+      "type": "ford/table",
+      "destination": "link",
+      "data-type": "blob",
+      "elements": []
+    },
+    {
+      "type": "ford/sidebar",
+      "destination": "link",
+      "data-type": "idf",
+      "elements": []
+    },
+    {
+      "type": "ford/sidequote",
+      "destination": "link",
+      "data-type": "idf",
+      "elements": []
+    }
+  ],
+  "date-elements": {
+    "tags": {
+      "firstCreated": {
+        "allow-blank": false,
+        "allow-string": false,
+        "format": "RFC3339"
+      },
+      "versionCreated": {
+        "allow-blank": false,
+        "allow-string": false,
+        "format": "RFC3339"
+      },
+      "contentCreated": {
+        "allow-blank": false,
+        "allow-string": false,
+        "format": "RFC3339"
+      },
+      "contentModified": {
+        "allow-blank": false,
+        "allow-string": false,
+        "format": "RFC3339"
+      },
+      "baddate": {
+        "allow-blank": false,
+        "allow-string": false,
+        "format": "RFC3339"
+      },
+      "blankdate": {
+        "allow-blank": false,
+        "allow-string": false,
+        "format": "RFC3339"
+      },
+      "allowblankdate": {
+        "allow-blank": true,
+        "allow-string": false,
+        "allows-strings": "future,undefined,past",
+        "format": "RFC3339"
+      },
+      "futuredate": {
+        "allow-blank": false,
+        "allow-string": true,
+        "format": "RFC3339"
+      },
+      "regextime": {
+        "allow-blank": false,
+        "allow-string": false,
+        "format": "^([0-9]|0[0-9]|1[0-9]|2[0-3]):([0-9]|[0-5][0-9]):([0-9]|[0-5][0-9])$"
+      }
+    },
+    "types": {
+      "imext:pubstart": {
+        "allow-blank": true,
+        "allow-string": false,
+        "format": "RFC3339",
+        "use-attribute": "value"
+      },
+      "nrpdate:start": {
+        "allow-blank": true,
+        "allow-string": false,
+        "format": "RFC3339",
+        "use-attribute": "value"
+      },
+      "nrpdate:end": {
+        "allow-blank": true,
+        "allow-string": false,
+        "format": "RFC3339",
+        "use-attribute": "value"
+      },
+      "nrpdate:created": {
+        "allow-blank": true,
+        "allow-string": false,
+        "format": "RFC3339",
+        "use-attribute": "value"
+      },
+      "nrpdate:modified": {
+        "allow-blank": true,
+        "allow-string": false,
+        "format": "RFC3339",
+        "use-attribute": "value"
+      }
+    },
+    "blocks": {
+      "Modified": {
+        "allow-blank": false,
+        "allow-string": false,
+        "format": "RFC3339",
+        "use-attribute": "value"
+      },
+      "Created": {
+        "allow-blank": false,
+        "allow-string": false,
+        "format": "RFC3339",
+        "use-attribute": "value"
+      },
+      "Published": {
+        "allow-blank": false,
+        "allow-string": false,
+        "format": "RFC3339",
+        "use-attribute": "value"
+      },
+      "Unpublished": {
+        "allow-blank": true,
+        "allow-string": false,
+        "format": "RFC3339",
+        "use-attribute": "value"
+      },
+      "end": {
+        "allow-blank": false,
+        "allow-string": false,
+        "format": "RFC3339",
+        "use-attribute": "value"
+      }
+    }
+  },
+  "html-sanitize-options": {
+    "allow-standard-attributes": true,
+    "allow-images": true,
+    "allow-lists": true,
+    "allow-tables": true,
+    "require-parsable-urls": true,
+    "allow-relative-urls": false,
+    "allowed-url-schemes": "http,https,mailto",
+    "allowed-elements-attributes": [
+      {
+        "element": "company",
+        "attributes": "id,tag,tagId"
+      },
+      {
+        "element": "personLink",
+        "attributes": "id,type"
+      },
+      {
+        "element": "foo",
+        "attributes": ""
+      }
+    ]
+  }
+}

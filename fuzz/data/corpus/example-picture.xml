@@ -1,0 +1,145 @@
+<newsItem guid="c382c937-8511-5d48-9677-55658c2bbb32" xmlns="http://iptc.org/std/nar/2006-10-01/"
+    conformance="power" standardversion="2.20" standard="NewsML-G2" version="1">
+    <!-- 
+        Catalog for ninat:, nprov:, irel:, cpnat:, drol:, etc... Mandatory.
+    -->
+    <catalogRef href="http://www.iptc.org/std/catalog/catalog.IPTC-G2-Standards_27.xml"/>
+    <!-- 
+        Catalog for infomaker extensions: imchn, imext etc...Mandatory.
+    -->
+    <catalogRef href="http://infomaker.se/spec/catalog/catalog.infomaker.g2.1_0.xml"/>
+    <itemMeta>
+        <!-- 
+            Identifies the newsItem as an image. Mandatory.
+        -->
+        <itemClass qcode="ninat:picture"/>
+        <!-- 
+            When newsItem is first created, "versionCreated" and "firstCreated" must have identical timestamps.
+            Mandatory.
+        -->
+        <versionCreated>2015-07-01T14:11:20Z</versionCreated>
+        <firstCreated>2015-07-01T14:11:20Z</firstCreated>
+        <!-- 
+            The publishing status of the Item. If no pubStatus exists the picture is considered to be
+            usable. Valid values stat:withheld, stat:usable and stat:canceled. Mandatory.
+        -->
+        <pubStatus qcode="stat:withheld"/>
+        <!-- 
+            The image filename. Note that "fileName" is optional. Writer uses imext:uri to identify image.
+        -->
+        <fileName>vApvJyM3pl2wpFpe0G2uBJxZfZc.jpeg</fileName>
+        <!-- 
+            Type image. Mandatory. 
+        -->
+        <itemMetaExtProperty type="imext:type" value="x-im/image"/>
+        <!-- 
+            Uniform resource identifier. Mandatory 
+        -->
+        <itemMetaExtProperty type="imext:uri" value="im://image/vApvJyM3pl2wpFpe0G2uBJxZfZc.jpeg"/>
+
+        <!-- 
+            Uniform resource locator. Note that imext:originalUrl is optional. Writer uses imext:uri to identify image. 
+        -->
+        <itemMetaExtProperty type="imext:originalUrl"
+            value="http://s3.example-img.se/vApvJyM3pl2wpFpe0G2uBJxZfZc.jpeg"/>
+        <!-- 
+            Links (extension of NewsML standard).
+        -->
+        <links xmlns="http://www.infomaker.se/newsml/1.0">
+            <!--
+                External source (if any). The "xyz" is a placeholder for the
+                real name of the source.
+            -->
+            <link rel="source" type="x-xyz/image" uri="xyz://image/2345836363"/>
+
+            <!--
+                Creator and updater referenced using IMID sub.
+            -->
+            <link rel="creator" type="x-imid/user" 
+                uri="imid://user/sub/znY7U3CO134n26zv9gb44_jCzSp"/>
+            <link rel="updater" type="x-imid/user" 
+                uri="imid://user/sub/znY7U3CO134n26zv9gb44_jCzSp"/>
+            <!-- 
+                Photographer. 
+                Exiftool mapping: xmp-dc:creator/iptc:by-line
+            -->
+            <link rel="author" type="x-im/author" uuid="bad4314c-7e33-11e5-8bcf-feff819cdc9f"
+                title="Jane Doe"/>
+            <!--
+                IMID belongings.
+            -->    
+            <link type="x-imid/organisation" uri="imid://organisation/Company-X" title="Company-X">
+                <links>
+                    <link type="x-imid/unit" uri="imid://unit/Newspaper-1" title="Newspaper-1"/>                                                                    
+                </links>
+            </link>                
+        </links>
+    </itemMeta>
+    <contentMeta>
+        <!-- 
+            When newsItem is first created, "contentCreated" and "contentModified" must have identical timestamps.
+            Mandatory.
+        -->
+        <contentCreated>2015-07-01T14:11:20Z</contentCreated>
+        <contentModified>2015-07-01T14:11:20Z</contentModified>
+        <!-- 
+            Optional. A party (person or organisation) which originated, distributed, aggregated or supplied the content or provided some information 
+            used to create or enhance the content. 
+            Writer will not add this be default to pictures uploaded in writer. 
+        -->
+        <infoSource literal="MKT"/>        
+        <!-- 
+            Optional. An alternative identifier assigned to the content. 
+        -->
+        <altId>1234456</altId>
+        <!-- 
+            The "metadata" element contains metadata that are included in the article but not part of the content 
+            itself.
+        -->
+        <metadata xmlns="http://www.infomaker.se/newsml/1.0">
+            <object id="46f60ada63fd" type="x-im/image">
+                <!-- 
+                    Metadata for the image. Except for width and height these are optional.                    
+                -->
+                <data>
+                    <width>1536</width>
+                    <height>1024</height>
+                    <!-- 
+                        Caption-Abstract
+                        Exiftool mapping: xmp-dc:description/iptc:caption-abstract
+                    -->
+                    <text>Maecenas at nisl in lorem egestas egestas.</text>
+                    <!-- 
+                        Date Created
+                        Exiftool mapping: xmp-photoshop:datecreated/iptc:datecreated
+                    -->
+                    <photoDateTime>2015-07-01T14:11:20+02:00</photoDateTime>
+                    <!--
+                        Credit
+                        Exiftool mapping: xmp-photoshop:credit/iptc:credit
+                    -->
+                    <credit>Company XYZ</credit>
+                    <!--
+                        Title
+                        Exiftool mapping: xmp-dc:title/iptc:objectname
+                    -->
+                    <objectName>nebulosa.jpg</objectName>
+                    <!-- 
+                        Special Instructions
+                        Exiftool mapping: xmp-photoshop:instructions/iptc:specialinstructions
+                    -->
+                    <instructions>Only use once</instructions>
+                    <!-- 
+                        Source
+                        Exiftool mapping: xmp-photoshop:source/iptc:source
+                    -->
+                    <source>Mediahouse XYZ</source>
+                    <!--
+                        MIME Type
+                    -->
+                    <mimeType>image/jpeg</mimeType>    
+                </data>
+            </object>
+        </metadata>
+    </contentMeta>
+</newsItem>

@@ -1,0 +1,100 @@
+# all available settings of specific linters
+run:
+  skip-dirs:
+    - testdata
+    - examples
+    - schema
+
+linters:
+  enable:
+    - bodyclose
+    - gosec
+    - deadcode
+    - depguard
+    - dogsled
+    - errcheck
+    - gochecknoinits
+    - gocritic
+    - gocyclo
+    - gofmt
+    - goimports
+    - revive
+    - goprintffuncname
+    - gosec
+    - gosimple
+    - govet
+    - ineffassign
+    - misspell
+    - nakedret
+    - rowserrcheck
+    - staticcheck
+    - structcheck
+    - stylecheck
+    - typecheck
+    - unconvert
+    - unparam
+    - unused
+    - varcheck
+    - whitespace
+
+issues:
+# Excluding configuration per-path, per-linter, per-text and per-source
+  exclude-rules:
+# Ignore cyclomatic complexity 38 of func `(*PlanningItem).fromDoc` is high (> 30) (gocyclo)
+    - path: newsml/planningitem.go
+      linters:
+        - gocyclo
+      source: fromDoc
+
+# Ignore cyclomatic complexity 35 of func `(*ConceptItem).toDoc` is high (> 30) (gocyclo)
+# Ignore cyclomatic complexity 57 of func `(*ConceptItem).fromDoc` is high (> 30) (gocyclo)
+    - path: newsml/conceptitem.go
+      linters:
+        - gocyclo
+      sources:
+        - toDoc
+        - fromDoc
+
+# Ignore ifElseChain: rewrite if-else to switch statement (gocritic)
+    - path: newsml/itemmeta.go
+      linters:
+        - gocritic
+      sources:
+        - FromDoc
+        - addLinks
+
+# Ignore `transformDataFromRaw` - `opts` is unused (unparam)
+    - path: newsml/contentmeta.go
+      linters:
+        - unparam
+
+# Ignore cyclomatic complexity 66 of func `CompareXML` is high (> 30) (gocyclo)
+    - path: newsml/common.go
+      linters:
+        - gocyclo
+      source: CompareXML
+
+# Ignore `buildXMLLink` - `xmlNs` always receives `"http://www.infomaker.se/newsml/1.0"` (unparam)
+    - path: newsml/common.go
+      linters:
+        - unparam
+      source: buildXMLLink
+
+# Ignore complaint "`file` can be `go/ast.Node` (interfacer)"
+    - path: cmd/generator/doc-generator.go
+      linters:
+        - interfacer
+      source: collect
+
+# Ignore complaint about the if-else in XMLToNavigaDoc
+    - path: converter.go
+      linters:
+        - gocritic
+        - unparam
+
+# Ignore in tests
+    - path: converter_test.go
+      linters:
+        - gocyclo
+        - structcheck
+

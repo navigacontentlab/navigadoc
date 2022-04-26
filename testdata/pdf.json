@@ -1,0 +1,75 @@
+{
+    "uuid": "c382c937-8511-5d48-9677-55658c2bbb32",
+    "type": "x-im/pdf",
+    "uri": "im://pdf/hCgYLejZv2uOYdNZlHGdryUsyb8.pdf",
+    "created": "2015-07-01T14:11:20Z",
+    "modified": "2015-07-01T14:11:20Z",
+    "meta": [
+        {
+            "id": "100",
+            "type": "x-im/pdf",
+            "data": {
+                "mimeType": "application/pdf",
+                "objectName": "DisasterReport.pdf",
+                "text": "Disaster-Report of 2016"
+            }
+        }
+    ],
+    "links": [
+        {
+            "uri": "imid://user/sub/znY7U3CO134n26zv9gb44_jCzSp",
+            "type": "x-imid/user",
+            "rel": "creator"
+        },
+        {
+            "uri": "imid://user/sub/znY7U3CO134n26zv9gb44_jCzSp",
+            "type": "x-imid/user",
+            "rel": "updater"
+        },
+        {
+            "uri": "im://author/local/c_r",
+            "type": "x-im/author/local",
+            "title": "C R",
+            "rel": "author"
+        },
+        {
+            "uri": "imid://organisation/Company-X",
+            "type": "x-imid/organisation",
+            "title": "Company-X",
+            "links": [
+                {
+                    "uri": "imid://unit/Newspaper-1",
+                    "type": "x-imid/unit",
+                    "title": "Newspaper-1"
+                }
+            ]
+        }
+    ],
+    "properties": [
+        {
+            "name": "altId",
+            "value": "1234456"
+        },
+        {
+            "name": "filename",
+            "value": "hCgYLejZv2uOYdNZlHGdryUsyb8.pdf"
+        },
+        {
+            "name": "haspublishedversion",
+            "value": "true"
+        },
+        {
+            "name": "originalUrl",
+            "value": "//s3.example-pdf.se/hCgYLejZv2uOYdNZlHGdryUsyb8.pdf"
+        },
+        {
+            "name": "provider",
+            "value": "John Doe"
+        },
+        {
+            "name": "infoSource",
+            "value": "MKT"
+        }
+    ],
+    "status": "withheld"
+}

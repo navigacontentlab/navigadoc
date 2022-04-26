@@ -1,0 +1,75 @@
+<!-- $.uuid = @guid -->
+<!-- $.type should be hardcoded to x-im/assignment -->
+<planning xmlns="http://iptc.org/std/nar/2006-10-01/" standard="NewsML-G2" standardversion="2.26" guid="b5ca0d32-b535-4578-90c2-09573e9d48bf" conformance="power">
+    <!--
+      @.meta.data.type
+
+      NOTE! This is a deviation from how we handle types (usually we use "x-im/image" etc.). The supported
+      qcodes as-is are "ninat:picture" (x-im/image) and "ninat:text" (x-im/article) so there must be a
+      mapping between these qcodes and x-im types in the conversion.
+    -->
+    <itemClass qcode="ninat:picture"/>
+    <!-- $.title -->
+    <headline>This is a photo assignment to O</headline>
+    <!-- $.meta.data.description -->
+    <description role="nrpdesc:intern">This is a photo assignment with photos linked.</description>
+    <!-- $.type -->
+    <planningExtProperty type="imext:type" value="x-im/assignment"/>
+    <!-- $.status -->
+    <planningExtProperty type="imext:status" value="imext:draft"/>
+    <!-- $.meta.data.start and (@why) $.meta.data.dateGranularity -->
+    <planningExtProperty type="nrpdate:start" value="2020-02-25T06:30:00.000Z"/>
+    <!-- $.properties -->
+    <!-- $.meta.data.end and (@why) $.meta.data.dateGranularity -->
+    <planningExtProperty type="nrpdate:end" value="2020-02-25T08:30:00.000Z"/>
+    <!-- $.created -->
+    <planningExtProperty type="nrpdate:created" value="2020-02-25T06:22:13.458Z"/>
+    <!-- $.modified -->
+    <planningExtProperty type="nrpdate:modified" value="2020-02-25T06:23:23.857Z"/>
+    <!-- $.links -->
+    <planningExtProperty type="asn:property" value="property 1"/>
+    <planningExtProperty type="asn:property" value="property 2"/>
+    <links xmlns="http://www.infomaker.se/newsml/1.0">
+        <link rel="assigned-to" role="nrprole:Reporter" title="Stefan Åberg" type="x-im/author" uuid="6c41fca9-7e32-5cda-9f25-51789f3dadc2"/>
+        <link rel="creator" title="K P" type="x-imid/user" uri="imid://user/sub/c65e1a47-1393-4e4f-a7b9-b1e388d971ca">
+            <links>
+                <link rel="affiliation" type="x-imid/organisation" uri="imid://organisation/navigate" title="navigate">
+                    <links>
+                        <link rel="affiliation" type="x-imid/unit" uri="imid://unit/imnews" title="imnews"/>
+                    </links>
+                </link>
+            </links>
+        </link>
+        <link rel="updater" type="x-imid/user"
+              uri="imid://user/sub/c65e1a47-1393-4e4f-a7b9-b1e388d971ca" title="K P">
+            <links>
+                <link rel="affiliation" type="x-imid/organisation"
+                      uri="imid://organisation/navigate" title="navigate">
+                    <links>
+                        <link rel="affiliation" type="x-imid/unit" uri="imid://unit/imnews" title="imnews"/>
+                    </links>
+                </link>
+            </links>
+        </link>
+        <link rel="topic" title="TagTagTag" type="x-im/topic" uuid="33e5d658-0040-4142-9d56-60587bde35d3"/>
+        <link rel="shared-with" type="x-imid/organisation" uri="imid://organisation/navigate"
+              title="navigate">
+            <links>
+                <link rel="shared-with" type="x-imid/unit" uri="imid://unit/naviganews" title="naviganews"/>
+            </links>
+        </link>
+        <link rel="location" type="x-geo/point" uri="geo://point/16.482616658114715_56.652239788092835" title="Björkvägen 27, 386 31 Färjestaden, Sweden">
+            <data>
+                <name>Kalmar län</name>
+                <country>Sweden</country>
+                <locality>Färjestaden</locality>
+                <geometry>POINT(16.482616658114715 56.652239788092835)</geometry>
+                <extraInfo/>
+            </data>
+        </link>
+        <link rel="image" type="x-im/image" uuid="b6142d33-e191-59c6-9c45-06772b3e922b" uri="im://image/ICKdkOvDXgHY0jJELhtZreunxQ8.jpg"/>
+        <link rel="image" type="x-im/image" uuid="6fecb214-3872-5122-9589-86ad60ff0886" uri="im://image/MqKFPSbZf7mMitU3xWrINJ7mMpY.jpg"/>
+        <link rel="image" type="x-im/image" uuid="4bd8d1d1-612d-5235-97b4-85f640788821" uri="im://image/x7_82MUQKJuzP4H2U6XzPgVddDs.jpg"/>
+        <link rel="image" type="x-im/image" uuid="fd80975d-c332-558b-9513-3efb47d24efb" uri="im://image/F2LPcqRGYvGNtS7Vk9CIvwa-b2g.jpg"/>
+    </links>
+</planning>

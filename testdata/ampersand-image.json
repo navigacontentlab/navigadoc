@@ -1,0 +1,126 @@
+{
+  "meta": [
+    {
+      "data": {
+        "instructions": "&><!-",
+        "copyright": "&><!-",
+        "altText": "&><!-",
+        "width": "1772",
+        "objectName": "EsTest_Writer.jpg&><!-",
+        "mimeType": "image/jpeg",
+        "source": "'&><!-",
+        "text": "E E, Mac Book Pro &§><!-",
+        "credit": "'&><!-",
+        "photoDateTime": "2019-10-15T18:12:48Z",
+        "height": "790"
+      },
+      "id": "123456",
+      "type": "x-im/image"
+    }
+  ],
+  "content": [
+    {
+      "id": "d1dbf67d385e",
+      "type": "x-im/header",
+      "data": {
+        "text": "Lorem ipsum dolor sit"
+      }
+    },
+    {
+      "id": "NPU0LDE0MywyMTQsMTgw",
+      "type": "x-im/content-part",
+      "title": "Vivamus vitae gravida",
+      "links": [
+        {
+          "type": "x-im/fact-1",
+          "title": "Faktaruta",
+          "rel": "type"
+        }
+      ],
+      "content": [
+        {
+          "id": "paragraph-abb247cabe3778f5296f3b65aa3c3cbb",
+          "type": "x-im/paragraph",
+          "data": {
+            "format": "html",
+            "text": "<p>This is a paragraph</p>"
+          }
+        },
+        {
+          "id": "paragraph-f6f5d97f5c8d6cd4977981ee4e609985",
+          "type": "x-im/paragraph",
+          "data": {
+            "format": "html",
+            "text": "<strong>Stronger than yesterday!</strong>"
+          }
+        }
+      ]
+    }
+  ],
+  "links": [
+    {
+      "rel": "creator",
+      "links": [
+        {
+          "rel": "affiliation",
+          "links": [
+            {
+              "rel": "affiliation",
+              "type": "x-imid/unit",
+              "title": "Lavender",
+              "uri": "imid://unit/Lavender"
+            }
+          ],
+          "type": "x-imid/organisation",
+          "title": "tryout",
+          "uri": "imid://organisation/tryout"
+        }
+      ],
+      "type": "x-imid/user",
+      "title": "E E",
+      "uri": "imid://user/sub/123"
+    },
+    {
+      "rel": "updater",
+      "links": [
+        {
+          "rel": "affiliation",
+          "links": [
+            {
+              "rel": "affiliation",
+              "type": "x-imid/unit",
+              "title": "Lavender",
+              "uri": "imid://unit/Lavender"
+            }
+          ],
+          "type": "x-imid/organisation",
+          "title": "tryout",
+          "uri": "imid://organisation/tryout"
+        }
+      ],
+      "type": "x-imid/user",
+      "title": "E E",
+      "uri": "imid://user/sub/123"
+    },
+    {
+      "rel": "author",
+      "type": "x-im/author",
+      "title": "E E",
+      "uuid": "123"
+    }
+  ],
+  "type": "x-im/image",
+  "uuid": "6d587e06-57ed-522f-a06b-4f3dc032ff9b",
+  "uri": "im://image/xs9TSZ7gBFDuJ-y4oTt17J9oOn0.jpg",
+  "properties": [
+    {
+      "name": "filename",
+      "value": "xs9TSZ7gBFDuJ-y4oTt17J9oOn0.jpg"
+    },
+    {
+      "name": "imext:originalUrl",
+      "value": "https://tryout-prod-internal-images.s3.eu-west-1.amazonaws.com/xs9TSZ7gBFDuJ-y4oTt17J9oOn0.jpg"
+    }
+  ],
+  "status": "draft"
+}

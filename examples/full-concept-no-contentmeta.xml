@@ -1,0 +1,187 @@
+<!--
+    NOTE! This concept includes "all" data possible to add to a concept. It is a
+    mix of all "internal" concepts to represent one source of information.
+
+    * x-im/author
+    * x-im/category
+    * x-im/event
+    * x-im/channel
+    * x-im/content-profile
+    * x-im/place
+    * x-im/organisation
+    * x-im/person
+    * x-im/section
+    * x-im/story
+    * x-im/topic
+-->
+
+<!-- $.uuid = @guid -->
+<conceptItem xmlns="http://iptc.org/std/nar/2006-10-01/" conformance="power"
+             guid="0fa58173-698f-4147-b14c-750ae9d400d9" standard="NewsML-G2" standardversion="2.20"
+             version="1">
+    <catalogRef href="http://www.iptc.org/std/catalog/catalog.IPTC-G2-Standards_27.xml"/>
+    <catalogRef href="http://infomaker.se/spec/catalog/catalog.infomaker.g2.1_0.xml"/>
+    <!-- $.properties -->
+    <rightsInfo>
+        <copyrightHolder>
+            <!-- $.properties -->
+            <name>org</name>
+        </copyrightHolder>
+    </rightsInfo>
+    <itemMeta>
+        <itemClass qcode="cinat:concept"/>
+        <!-- $.properties -->
+        <provider literal="writer"/>
+        <!-- $.modified -->
+        <versionCreated>2020-03-12T15:11:58Z</versionCreated>
+        <!-- $.created -->
+        <firstCreated>2019-08-21T08:34:24Z</firstCreated>
+        <!-- $.status -->
+        <pubStatus qcode="imext:draft"/>
+        <!-- $.properties -->
+        <edNote>This is a note.</edNote>
+        <!-- $.type -->
+        <itemMetaExtProperty type="imext:type" value="x-im/author"/>
+        <!-- $.meta[.type="x-im/author"].data.firstName -->
+        <itemMetaExtProperty type="imext:firstName" value="O"/>
+        <!-- $.meta[.type="x-im/author"].data.lastName -->
+        <itemMetaExtProperty type="imext:lastName" value="A"/>
+        <!-- $.meta[.type="x-im/author"].data.signature -->
+        <itemMetaExtProperty type="imext:signature" value="OA"/>
+        <!-- $.meta[.type="x-im/event"].data.start and (@why) $.meta.data.dateGranularity -->
+        <itemMetaExtProperty type="nrpdate:start" value="2020-02-25T06:30:00.000Z" why="nrpwhy:datetime"/>
+        <!-- $.meta[.type="x-im/event"].data.end and (@why) $.meta.data.dateGranularity -->
+        <itemMetaExtProperty type="nrpdate:end" value="2020-02-25T08:30:00.000Z" why="nrpwhy:datetime"/>
+        <!-- $.created -->
+        <itemMetaExtProperty type="nrpdate:created" value="2020-02-25T06:18:00.588Z"/>
+        <!-- $.modified -->
+        <itemMetaExtProperty type="nrpdate:modified" value="2020-02-25T06:23:25.290Z"/>
+        <!-- $.links -->
+        <links xmlns="http://www.infomaker.se/newsml/1.0">
+            <link rel="creator" title="Naviganews User" type="x-imid/user"
+                  uri="imid://user/sub/72324a3b-4403-4740-997e-bc90c8ce3bd7">
+                <links>
+                    <link rel="affiliation" title="naviga" type="x-imid/organisation"
+                          uri="imid://organisation/naviga">
+                        <links>
+                            <link rel="affiliation" title="naviganews" type="x-imid/unit"
+                                  uri="imid://unit/naviganews"/>
+                        </links>
+                    </link>
+                </links>
+            </link>
+            <link type="x-imid/user" rel="updater"
+                  uri="imid://user/sub/25a7321d-6fee-4b2d-850c-913d4e3ee1ee" title="Dev Admin">
+                <links>
+                    <link rel="affiliation" type="x-imid/organisation"
+                          uri="imid://organisation/naviga" title="naviga">
+                        <links>
+                            <link rel="affiliation" type="x-imid/unit" uri="imid://unit/naviganews"
+                                  title="naviganews"/>
+                        </links>
+                    </link>
+                </links>
+            </link>
+            <link rel="shared-with" type="x-imid/organisation" uri="imid://organisation/navigate" title="navigate">
+                <links>
+                    <link rel="shared-with" type="x-imid/organisation" uri="imid://organisation/navigate"
+                          title="navigate"/>
+                </links>
+            </link>
+            <link rel="same-as" type="x-imid/user" uri="imid://user/sub/d07b9296-9017-4be7-8bdd-e763d6d2ab0e"/>
+            <link rel="irel:seeAlso" type="x-im/social+facebook" url="https://www.facebook.com/"/>
+            <link rel="irel:seeAlso" type="x-im/social+twitter" url="https://www.twitter.com"/>
+            <link rel="organiser" type="x-organiser/organisation" title="Naviga" uri="organiser://organisation/naviga"/>
+            <link rel="topic" type="x-im/topic" title="TagTagTag" uuid="33e5d658-0040-4142-9d56-60587bde35d3"/>
+            <link rel="participant" type="x-im/author" title="P A"
+                  uuid="eb6fd2ca-4e65-4d88-923b-fdd52dc34a44"/>
+            <link rel="participant" type="x-participant/person" title="L L"
+                  uri="participant://person/L_L"/>
+            <link rel="broader" type="x-im/category" uuid="9054cc3e-afbd-42f9-a954-edb542aeb057"/>
+            <link rel="irel:seeAlso" type="text/html" url="www.example.org"/>
+            <link rel="associated-with" type="x-im/channel" uuid="6893f5cf-f1a4-41c2-bc3f-771b8f7cafbd"/>
+            <link rel="replaced-by" uuid="ba661bd2-0b7b-477e-ab41-bb13bb6e7b0f"/>
+        </links>
+    </itemMeta>
+    <concept>
+        <!-- possible to calculate this value using $.type and $.uuid -->
+        <!--
+          NOTE! IGNORE @creator if any (not used)
+        -->
+        <conceptId uri="im://author/0fa58173-698f-4147-b14c-750ae9d400d9" created="2021-01-18T08:01:32" creator="tt:el"
+                   qcode="ttevent:576104" modified="2021-01-18T08:01:32"/>
+        <!-- A static mapping between $.type and iptc value:
+
+            x-im/author = cnpnat:person
+            x-im/category = cpnat:object
+            x-im/event = cpnat:event
+            x-im/channel = cpnat:abstract
+            x-im/content-profile = cpnat:object
+            x-im/place = cpnat:poi (both position and polygin)
+            x-im/organisation = cpnat:organisation
+            x-im/person = cpnat:person
+            x-im/section = cpnat:object
+            x-im/story = cpnat:abstract
+            x-im/topic = cpnat:object
+
+        -->
+        <type qcode="cpnat:person"/>
+        <!-- $.title -->
+        <name>O A</name>
+        <!-- $.meta[.type="x-im/author"].data.definitionShort -->
+        <definition role="drol:short">Developer</definition>
+        <!-- $.meta[.type="x-im/author"].data.definition -->
+        <definition role="drol:long">Senior developer</definition>
+        <metadata xmlns="http://www.infomaker.se/newsml/1.0">
+            <object id="1pGrYW69CaIf" type="x-im/contact-info">
+                <!-- $.meta[.type="x-im/author"].data.* -->
+                <data>
+                    <email>o.a@invalid.se</email>
+                    <phone>0730000000</phone>
+                    <streetAddress>Street 5</streetAddress>
+                    <postalCode>39393</postalCode>
+                    <city>Kalmar</city>
+                    <country>Sverige</country>
+                    <mobile>0730000000</mobile>
+                </data>
+            </object>
+            <object id="d1e25" type="x-im/event-details">
+                <data>
+                    <!-- $.meta[.type="x-im/event"].data.registration -->
+                    <registration>Another text field</registration>
+                </data>
+            </object>
+            <object id="4pGrYW69CaIf" type="x-im/polygon">
+                <data>
+                    <!-- $.meta[.type="x-im/polygon"].data.geometry -->
+                    <geometry>POLYGON((14.01123 55.95082,11.63818 57.11396,10.75928
+                        59.10979,12.42920 60.48031,11.90186 61.83678,12.16553 63.88066,14.18701
+                        65.42293,14.18701 66.56690,18.22998 68.67360,20.42725 69.17921,22.53662
+                        68.83285,24.03076 67.89318,24.73389 65.74987,23.15186 65.53237,21.74561
+                        64.41717,21.04248 63.56941,19.19678 62.97651,17.70264 61.20819,19.37256
+                        59.82419,18.93311 58.83799,17.26318 58.42625,17.87842 56.97051,16.91162
+                        56.14716,15.59326 55.75348,14.01123 55.95082))
+                    </geometry>
+                </data>
+            </object>
+            <object id="5pGrYW69CaIf" type="x-im/position">
+                <data>
+                    <!-- $.meta[.type="x-im/position"].data.geometry -->
+                    <geometry>POINT(133.77513599999997 -25.274398)</geometry>
+                </data>
+            </object>
+            <object id="2pGrYW69CaIf" type="x-im/contact-info">
+                <!-- $.meta[.type="x-im/organisation"].data.* -->
+                <data>
+                    <email>test@example.org</email>
+                    <phone>+46111222333</phone>
+                    <mobile>+46700000001</mobile>
+                    <streetAddress>Easy Street 1</streetAddress>
+                    <postalCode>111222</postalCode>
+                    <city>Paradise City</city>
+                    <country>Glorantha</country>
+                </data>
+            </object>
+        </metadata>
+    </concept>
+</conceptItem>
