@@ -14,3 +14,7 @@ The navigadoc package has the following components
 * Package github.com/navigacontentlab/navigadoc/doc
       
       * contains the golang definition of NavigaDoc
+
+## Generate /doc and /rpc
+
+* ./generate.sh
