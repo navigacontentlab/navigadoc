@@ -1,1 +1,1 @@
-go run cmd/docformat/generate.go
+go run cmd/codegen/main.go

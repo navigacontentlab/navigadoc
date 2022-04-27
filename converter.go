@@ -15,7 +15,7 @@ import (
 	"strconv"
 	"strings"
 
-	"bitbucket.org/infomaker/doc-format/v2/doc"
+	"github.com/navigacontentlab/navigadoc/doc"
 )
 
 //go:embed schema/navigadoc-schema.json

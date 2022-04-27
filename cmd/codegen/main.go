@@ -228,7 +228,7 @@ func (g *Generator) createConverters() {
 	g.P(`import `, `(`)
 	g.P(`"time"`)
 	g.P(``)
-	g.P(`doc "bitbucket.org/infomaker/doc-format/v2/doc"`)
+	g.P(`doc "github.com/navigacontentlab/navigadoc/doc"`)
 	g.P(`"google.golang.org/protobuf/types/known/timestamppb"`)
 	g.P(`)`)
 

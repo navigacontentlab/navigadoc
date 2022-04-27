@@ -1,4 +1,4 @@
-package docformat
+package navigadoc
 
 import (
 	"errors"
@@ -6,11 +6,10 @@ import (
 
 	"strings"
 
-	"github.com/xeipuuv/gojsonschema"
-
-	"bitbucket.org/infomaker/doc-format/v2/doc"
 	"github.com/beevik/etree"
 	"github.com/google/uuid"
+	"github.com/navigacontentlab/navigadoc/doc"
+	"github.com/xeipuuv/gojsonschema"
 )
 
 type BlockVisitor func(block doc.Block, args ...interface{}) (doc.Block, error)
@@ -72,20 +71,6 @@ func WalkBlock(block doc.Block, args []interface{}, fns ...BlockVisitor) (doc.Bl
 	}
 
 	return block, nil
-}
-
-// WalkXMLDocumentElements For each element in the document call the ElementVistor functions provided
-func WalkXMLDocumentElements(document *etree.Document, args []interface{}, fns ...ElementVisitor) error {
-	allElements := document.FindElements(fmt.Sprintf("/%s//", document.Root().Tag))
-	for _, element := range allElements {
-		for i := range fns {
-			if err := fns[i](element, args...); err != nil {
-				return err
-			}
-		}
-	}
-
-	return nil
 }
 
 // Deprecated: UUID handling in OpenContent to be case-insensitive
@@ -213,31 +198,6 @@ func FixNewsMLNamespaces(element *etree.Element, args ...interface{}) error {
 		}
 	}
 	return nil
-}
-
-// Deprecated: UUID handling in OpenContent to be case-insensitive
-// FixNewsMLUUIDsAndNamespaces Validate UUID format and convert to lowercase.
-// Add namespace to <links>, <object>, <metadata> and <idf> where missing
-// Returns RequiredArgumentError if link is missing required arguments
-func FixNewsMLUUIDsAndNamespaces(document *etree.Document) error {
-	err := WalkXMLDocumentElements(document, nil,
-		ValidateAndLowercaseNewsMLUUIDs,
-		FixNewsMLNamespaces,
-	)
-
-	return err
-}
-
-// ValidateNewsMLUUIDsAndFixNamespaces Validate UUID format.
-// Add namespace to <links>, <object>, <metadata> and <idf> where missing
-// Returns RequiredArgumentError if link is missing required arguments
-func ValidateNewsMLUUIDsAndFixNamespaces(document *etree.Document) error {
-	err := WalkXMLDocumentElements(document, nil,
-		ValidateNewsMLUUIDs,
-		FixNewsMLNamespaces,
-	)
-
-	return err
 }
 
 // Deprecated: UUID handling in OpenContent to be case-insensitive

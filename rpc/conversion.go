@@ -4,7 +4,7 @@ package rpc
 import (
 	"time"
 
-	doc "bitbucket.org/infomaker/doc-format/v2/doc"
+	doc "github.com/navigacontentlab/navigadoc/doc"
 	"google.golang.org/protobuf/types/known/timestamppb"
 )
 

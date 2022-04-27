@@ -10,8 +10,8 @@ import (
 	"strings"
 	"testing"
 
-	"bitbucket.org/infomaker/doc-format/v2/doc"
 	"github.com/Infomaker/etree"
+	"github.com/navigacontentlab/navigadoc/doc"
 )
 
 const configFile = "testdata/custom-config.json"

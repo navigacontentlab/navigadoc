@@ -4,7 +4,8 @@ package naviga;
 
 import "google/protobuf/timestamp.proto";
 
-option go_package = "bitbucket.org/infomaker/doc-format/v2/rpc";
+option go_package ="github.com/navigacontentlab/navigadoc/doc";
+
 
 // Document is the content, doh!
 message Document {
