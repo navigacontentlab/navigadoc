@@ -1,4 +1,4 @@
-module bitbucket.org/infomaker/doc-format/v2
+module github.com/navigacontentlab/navigadoc
 
 go 1.17
 

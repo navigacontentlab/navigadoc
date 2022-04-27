@@ -1,7 +1,7 @@
 //go:build gofuzz
 // +build gofuzz
 
-package docformat
+package navigadoc
 
 import (
 	"bytes"

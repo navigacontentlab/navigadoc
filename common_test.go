@@ -1,4 +1,4 @@
-package docformat_test
+package navigadoc_test
 
 import (
 	"fmt"

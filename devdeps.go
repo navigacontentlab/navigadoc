@@ -1,7 +1,7 @@
 //go:build tools
 // +build tools
 
-package docformat
+package navigadoc
 
 import (
 	_ "github.com/golang/protobuf/proto"

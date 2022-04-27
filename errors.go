@@ -1,4 +1,4 @@
-package docformat
+package navigadoc
 
 type MalformedDocumentError struct {
 	err string

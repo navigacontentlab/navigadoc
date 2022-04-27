@@ -3,14 +3,10 @@ package docformat
 import (
 	"errors"
 	"fmt"
-	"reflect"
-	"regexp"
+
 	"strings"
-	"time"
 
 	"github.com/xeipuuv/gojsonschema"
-
-	"bitbucket.org/infomaker/doc-format/v2/newsml"
 
 	"bitbucket.org/infomaker/doc-format/v2/doc"
 	"github.com/beevik/etree"
@@ -130,99 +126,6 @@ func validateUUID(theUUID string) error {
 	}
 
 	return nil
-}
-
-// ValidateDocumentDates Walks each document block and validates dates.
-// Requires external configuration
-func ValidateDocumentDates(document *doc.Document, dateConfig newsml.DateConfig) error {
-	var err error
-
-	// First the document root members
-	val := reflect.ValueOf(*document)
-	for i := 0; i < val.NumField(); i++ {
-		typeField := val.Type().Field(i)
-		if dateConfig.IsDate(newsml.Block, typeField.Name) {
-			valueField := val.Field(i)
-			switch valueField.Interface().(type) {
-			case *time.Time:
-				tim := valueField.Interface().(*time.Time)
-				err = ValidateDate(dateConfig, newsml.Block, typeField.Name, tim.Format(time.RFC3339))
-			case string:
-				err = ValidateDate(dateConfig, newsml.Block, typeField.Name, fmt.Sprintf("%v", valueField.Interface()))
-			}
-		}
-		if err != nil {
-			return fmt.Errorf("error: %s", err)
-		}
-	}
-
-	err = WalkDocument(document, nil, func(block doc.Block, args ...interface{}) (doc.Block, error) {
-		val := reflect.ValueOf(block)
-		for i := 0; i < val.NumField(); i++ {
-			typeField := val.Type().Field(i)
-			if dateConfig.IsDate(newsml.Block, typeField.Name) {
-				valueField := val.Field(i)
-				switch valueField.Interface().(type) {
-				case *time.Time:
-					tim := valueField.Interface().(*time.Time)
-					err = ValidateDate(dateConfig, newsml.Block, typeField.Name, tim.Format(time.RFC3339))
-				case string:
-					err = ValidateDate(dateConfig, newsml.Block, typeField.Name, fmt.Sprintf("%v", valueField.Interface()))
-				}
-			}
-			if err != nil {
-				return block, fmt.Errorf("error: %s", err)
-			}
-		}
-
-		if len(block.Data) > 0 {
-			for key, value := range block.Data {
-				if dateConfig.IsDate(newsml.Block, key) {
-					err = ValidateDate(dateConfig, newsml.Block, key, value)
-				}
-				if err != nil {
-					return block, fmt.Errorf("error in block data %s: %s", block.Name, err.Error())
-				}
-			}
-		}
-
-		return block, nil
-	})
-
-	return nil
-}
-
-// ValidateNewsMLDates Used to validate dates
-// Requires external configuration
-func ValidateNewsMLDates(xmlDoc *etree.Document, dateConfig newsml.DateConfig) error {
-	var err error
-
-	err = WalkXMLDocumentElements(xmlDoc, nil, func(element *etree.Element, args ...interface{}) error {
-		var typeAttribute string
-		a := element.SelectAttr("type")
-		if a != nil {
-			typeAttribute = a.Value
-		}
-
-		if dateConfig.IsDate(newsml.TagNode, element.Tag) {
-			err = ValidateDate(dateConfig, newsml.TagNode, element.Tag, element.Text())
-		} else if typeAttribute != "" && dateConfig.IsDate(newsml.TypeNode, typeAttribute) {
-			valueAttr := dateConfig.GetAttribute(newsml.TypeNode, typeAttribute)
-			d := element.SelectAttr(valueAttr)
-			if d != nil {
-				err = ValidateDate(dateConfig, newsml.TypeNode, typeAttribute, d.Value)
-			} else {
-				err = fmt.Errorf("no attribute found for %s", valueAttr)
-			}
-		}
-		if err != nil {
-			return fmt.Errorf("error %s: %s", element.GetPath(), err.Error())
-		}
-
-		return nil
-	})
-
-	return err
 }
 
 // Deprecated: UUID handling in OpenContent to be case-insensitive
@@ -350,56 +253,6 @@ func ValidateAndLowercaseNewsMLUUID(element *etree.Element, theUUID string) erro
 	uuidAttr := element.CreateAttr("uuid", strings.ToLower(theUUID))
 	if uuidAttr == nil {
 		return fmt.Errorf("lowercasing uuid returned nil")
-	}
-
-	return nil
-}
-
-// ValidateDate Validate element date. Requires external config.
-func ValidateDate(dateConfig newsml.DateConfig, eType string, name string, date string) error {
-	format := dateConfig.GetFormat(eType, name)
-	if format == "" {
-		format = "RFC3339"
-	}
-
-	if date == "" && dateConfig.AllowBlank(eType, name) {
-		return nil
-	}
-
-	var err error
-	hasOffset := regexp.MustCompile("(Z|[+-][0-1][0-5]:[0-5][0-9])$")
-
-	switch format {
-	case "RFC3339", "RFC3339Nano":
-		if !hasOffset.MatchString(date) {
-			err = fmt.Errorf("time \"%s\" UTC offset is missing or invalid", date)
-			break
-		}
-		_, err = time.Parse(time.RFC3339Nano, date)
-	default:
-		// if not blank assume a regex pattern for now
-		if format != "" {
-			validDate, err := regexp.Compile(format)
-			if err != nil {
-				return InvalidArgumentError{
-					Msg: fmt.Sprintf("invalid date format: %s", format),
-				}
-			}
-			if !validDate.MatchString(date) {
-				return InvalidArgumentError{
-					Msg: fmt.Sprintf("invalid date %s %s: %s", name, date, err),
-				}
-			}
-		}
-	}
-
-	if err != nil {
-		if dateConfig.AllowString(eType, name) {
-			return nil
-		}
-		return InvalidArgumentError{
-			Msg: fmt.Sprintf("invalid date %s %s: %s", name, date, err),
-		}
 	}
 
 	return nil
