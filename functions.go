@@ -76,32 +76,3 @@ func CheckForEmptyBlocksRecursive(block doc.Block, kind string, idx int, path []
 	}
 	return nil
 }
-
-func mergeSections(dflt []string, cust []string) []string {
-	allSections := append(dflt, cust...)
-
-	noDups := map[string]bool{}
-	for _, s := range allSections {
-		noDups[s] = true
-	}
-
-	var keys []string
-
-	for key := range noDups {
-		switch key {
-		case "itemmeta-newsitem":
-			delete(noDups, "contentmeta")
-		case "itemmeta-concept":
-			delete(noDups, "concept")
-		case "itemmeta-conceptitem":
-			delete(noDups, "conceptitem")
-		case "itemmeta-planning":
-			delete(noDups, "planning")
-		}
-	}
-	for key := range noDups {
-		keys = append(keys, key)
-	}
-
-	return keys
-}
