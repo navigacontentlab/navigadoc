@@ -1,7 +1,7 @@
 bin_dir=$(shell pwd)/bin
 
 bin/protoc-gen-go: go.mod
-	GOBIN=$(bin_dir) go install github.com/golang/protobuf/protoc-gen-go
+	GOBIN=$(bin_dir) go install google.golang.org/protobuf/cmd/protoc-gen-go
 
 .PHONY: generate
 generate: bin/protoc-gen-go

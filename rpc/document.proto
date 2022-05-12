@@ -4,7 +4,7 @@ package naviga;
 
 import "google/protobuf/timestamp.proto";
 
-option go_package ="github.com/navigacontentlab/navigadoc/doc";
+option go_package ="github.com/navigacontentlab/navigadoc/rpc";
 
 
 // Document is the content, doh!
