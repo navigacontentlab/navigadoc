@@ -9,10 +9,10 @@ The navigadoc package has the following components
 * Package github.com/navigacontentlab/navigadoc
 
       * contains utility functions for the NavigaDoc format
-  
-    
+
+
 * Package github.com/navigacontentlab/navigadoc/doc
-      
+
       * contains the golang definition of NavigaDoc
 
 ## Generate /doc and /rpc
@@ -23,5 +23,5 @@ The navigadoc package has the following components
 
 * upgrade to go 1.18 (when linters have caught up)
 * add more utility functions
-* specify other formats related to NavigaDoc & Block
+* specify other formats related to NavigaDoc and Block
 * go through example/test data and filter out what is not being used
