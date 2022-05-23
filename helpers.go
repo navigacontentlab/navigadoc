@@ -74,7 +74,7 @@ func WalkBlock(block doc.Block, args []interface{}, fns ...BlockVisitor) (doc.Bl
 // Deprecated: UUID handling in OpenContent to be case-insensitive
 // ValidateAndLowercaseDocumentUUIDs Walks each document block to validate and lowercase convert UUIDs
 func ValidateAndLowercaseDocumentUUIDs(block doc.Block, args ...interface{}) (doc.Block, error) {
-	err := validateUUID(block.UUID)
+	err := ValidateUUID(block.UUID)
 	if err != nil {
 		return block, InvalidArgumentError{
 			Msg: fmt.Sprintf("uuid error %s[%s]: %s", block.Type, block.UUID, err),
@@ -88,7 +88,7 @@ func ValidateAndLowercaseDocumentUUIDs(block doc.Block, args ...interface{}) (do
 
 // ValidateDocumentUUIDs Walks each document block to validate and lowercase convert UUIDs
 func ValidateDocumentUUIDs(block doc.Block, args ...interface{}) (doc.Block, error) {
-	err := validateUUID(block.UUID)
+	err := ValidateUUID(block.UUID)
 	if err != nil {
 		return block, InvalidArgumentError{
 			Msg: fmt.Sprintf("uuid error %s[%s]: %s", block.Type, block.UUID, err),
@@ -98,7 +98,7 @@ func ValidateDocumentUUIDs(block doc.Block, args ...interface{}) (doc.Block, err
 	return block, nil
 }
 
-func validateUUID(theUUID string) error {
+func ValidateUUID(theUUID string) error {
 	if theUUID == "" {
 		return nil
 	}
