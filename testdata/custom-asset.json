@@ -1,0 +1,15 @@
+{
+  "uuid": "59781924-de43-52b8-a108-1c5ac0890e15",
+  "type": "x-im/svg",
+  "uri": "im://asset/svg/59781924-de43-52b8-a108-1c5ac0890e15",
+  "meta": [{
+      "type": "x-im/svg",
+      "data": {
+          "mimeType": "application/svg+xml"
+      }
+  }],
+  "properties": [{
+      "name": "filename",
+      "value": "59781924-de43-52b8-a108-1c5ac0890e15"
+  }]
+}

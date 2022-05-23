@@ -1,0 +1,33 @@
+{
+  "uuid": "6fca394b-607a-46df-a150-399c91800b67",
+  "type": "x-im/package",
+  "title": "Ps testpaket",
+  "published": "2020-02-03T07:25:23.384Z",
+  "unpublished": "2020-03-03T07:25:23.384Z",
+  "status": "draft",
+  "meta": [
+    {
+      "type": "x-im/package",
+      "data": {}
+    }
+  ],
+  "links": [
+    {
+      "rel": "list",
+      "type": "x-im/list",
+      "uuid": "d1765c6b-4ca3-4f64-a137-afbd2d315a40"
+    },
+    {
+      "rel": "channel",
+      "type": "x-im/channel",
+      "title": "esg",
+      "uuid": "b6142d33-e191-59c6-9c45-06772b3e922b"
+    },
+    {
+      "rel": "channel",
+      "type": "x-im/channel",
+      "title": "ot",
+      "uuid": "7c8a928e-05f2-4c1f-80eb-844aece4c518"
+    }
+  ]
+}

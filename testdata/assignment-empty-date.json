@@ -1,0 +1,60 @@
+{
+  "uuid": "b5ca0d32-b535-4578-90c2-09573e9d48bf",
+  "type": "x-im/assignment",
+  "title": "This is a photo assignment to O",
+  "status": "draft",
+  "created": "2020-02-25T06:22:13.458Z",
+  "modified": "2020-02-25T06:23:23.857Z",
+  "properties": [
+    {
+      "name": "copyright",
+      "value": "org"
+    },
+    {
+      "name": "provider",
+      "value": "nrp"
+    },
+    {
+      "name": "nrpdate:modified",
+      "value": ""
+    }
+  ],
+  "meta": [
+    {
+      "type": "x-im/assignment",
+      "data": {
+        "type": "x-im/image",
+        "start": "2020-02-25T06:30:00.000Z",
+        "end": "2020-02-25T08:30:00.000Z",
+        "description": "This is a photo assignment with photos linked."
+      }
+    }
+  ],
+  "links": [
+    {
+      "rel": "image",
+      "type": "x-im/image",
+      "uuid": "b6142d33-e191-59c6-9c45-06772b3e922b",
+      "uri": "im://image/ICKdkOvDXgHY0jJELhtZreunxQ8.jpg"
+    },
+    {
+      "rel": "image",
+      "type": "x-im/image",
+      "uuid": "6fecb214-3872-5122-9589-86ad60ff0886",
+      "uri": "im://image/MqKFPSbZf7mMitU3xWrINJ7mMpY.jpg"
+    },
+    {
+      "rel": "location",
+      "title": "Björkvägen 27, 386 31 Färjestaden, Sweden",
+      "type": "x-geo/point",
+      "uri": "geo://point/16.482616658114715_56.652239788092835",
+      "data": {
+        "name": "Kalmar län",
+        "country": "Sweden",
+        "locality": "Färjestaden",
+        "geometry": "POINT(16.482616658114715 56.652239788092835)",
+        "description": "Tredje våningen"
+      }
+    }
+  ]
+}

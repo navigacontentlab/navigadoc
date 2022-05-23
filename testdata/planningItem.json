@@ -1,0 +1,57 @@
+{
+  "uuid": "f2cc122a-073f-4c6f-bddc-bf186a09c934",
+  "type": "x-im/newscoverage",
+  "title": "This is a plan to O",
+  "status": "draft",
+  "created": "2020-02-25T06:22:14.676Z",
+  "modified": "2020-02-25T06:23:24.496Z",
+  "properties": [
+    {
+      "name": "copyright",
+      "value": "org"
+    },
+    {
+      "name": "provider",
+      "value": "nrp"
+    }
+  ],
+  "meta": [{
+    "type": "x-im/newscoverage",
+    "data": {
+      "priority": "2",
+      "start": "2020-02-25T06:30:00.000Z",
+      "end": "2020-02-25T08:30:00.000Z",
+      "dateGranularity": "datetime",
+      "slug": "Some other text field",
+      "description": "Text field in plan",
+      "publicDescription": "And one more text field."
+    }
+  }],
+  "links": [
+    {
+      "rel": "section",
+      "title": "Economics",
+      "uri": "nrp://section/economics"
+    },
+    {
+      "rel": "assignment",
+      "uuid": "fee-123"
+    },
+    {
+      "rel": "assignment",
+      "uuid": "fee-123"
+    },
+    {
+      "rel": "event",
+      "type": "x-im/event",
+      "title": "Untitled",
+      "uuid":"e09aaeb8-27d9-4e3e-a9aa-f79f4c460ba4"
+    },
+    {
+      "rel": "topic",
+      "title": "TagTagTag",
+      "type": "x-im/topic",
+      "uuid": "33e5d658-0040-4142-9d56-60587bde35d3"
+    }
+  ]
+}

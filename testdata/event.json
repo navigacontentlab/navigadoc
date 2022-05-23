@@ -1,0 +1,73 @@
+{
+  "uuid": "e09aaeb8-27d9-4e3e-a9aa-f79f4c460ba4",
+  "type": "x-im/event",
+  "title": "Parent event to O",
+  "status": "draft",
+  "created": "2020-02-25T06:18:00.588Z",
+  "modified": "2020-02-25T06:23:25.290Z",
+  "properties": [
+    {
+      "name": "copyright",
+      "value": "org"
+    },
+    {
+      "name": "provider",
+      "value": "nrp"
+    }
+  ],
+  "meta": [{
+    "type": "x-im/event",
+    "data": {
+      "priority": "2",
+      "start": "2020-02-25T06:30:00.000Z",
+      "end": "2020-02-25T08:30:00.000Z",
+      "dateGranularity": "datetime",
+      "description": "This is a text field.",
+      "registration": "Another text field" // This field should be mapped to object[@type="x-im/event-details"]/data/registration
+    }
+  }],
+  "links": [
+    {
+      "rel": "section",
+      "title": "Economics",
+      "uri": "nrp://section/economics"
+    },
+    {
+      "rel": "participant",
+      "title": "P A",
+      "type": "x-im/author",
+      "uuid": "eb6fd2ca-4e65-4d88-923b-fdd52dc34a44"
+    },
+    {
+      "rel": "participant",
+      "title": "L L",
+      "type": "x-participant/person",
+      "uri": "participant://person/l_l"
+    },
+    {
+      "rel": "organiser",
+      "title": "Naviga",
+      "type": "x-organiser/organisation",
+      "uri": "organiser://organisation/naviga"
+    },
+    {
+      "rel": "topic",
+      "title": "TagTagTag",
+      "type": "x-im/topic",
+      "uuid": "33e5d658-0040-4142-9d56-60587bde35d3"
+    },
+    {
+      "rel": "location",
+      "title": "Kalmar Airport, Flygplatsvägen 32, 392 41 Kalmar, Sweden",
+      "type": "x-geo/point",
+      "uri": "geo://point/16.287918090820312_56.67754482865003",
+      "data": {
+        "name": "Kalmar län",
+        "country": "Sweden",
+        "locality": "Färjestaden",
+        "geometry": "POINT(16.287918090820312 56.67754482865003)",
+        "description": "Terminal 2"
+      }
+    }
+  ]
+}

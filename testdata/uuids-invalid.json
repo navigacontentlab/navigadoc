@@ -1,0 +1,32 @@
+{
+    "uuid": "1d02738f-7c99-42ba-a6da-3d1b97261523",
+    "modified": "2015-07-01T14:11:20Z",
+    "created": "2015-07-01T14:00:02Z",
+    "status": "withheld",
+    "title": "Proin eget dignissim ipsum",
+    "type": "x-im/article",
+    "properties": [
+      {"name":"subtype", "value":"x-im/print"},
+      {"name":"haspublishedversion", "value":"true"}
+    ],
+    "uri": "im://article/1d02738f-7c99-42ba-a6da-3d1b97261523",
+    "url": "http://example.org/articles/1d02738f-7c99-42ba-a6da-3d1b97261523.xml",
+    "published": "2015-07-01T14:27:00+02:00",
+    "unpublished": "2015-10-05T15:14:13+02:00",
+    "language": "sv",
+    "products": [
+      "ddse",
+      "test"
+    ],
+    "links": [
+      {
+        "title": "Quisque pharetra id velit quis commodo",
+        "rel": "article", "type": "x-im/article",
+        "uuid": "INVALID"
+      }
+    ],
+    "meta": [
+    ],
+    "content": [
+    ]
+  }

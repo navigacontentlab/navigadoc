@@ -1,0 +1,40 @@
+{
+  "uuid": "b5ca0d32-b535-4578-90c2-09573e9d48bg",
+  "type": "x-im/list",
+  "title": "Test list",
+  "meta": [{
+    "type": "x-im/list",
+    "data": {
+      "description": "This is a photo assignment with photos linked.",
+      "limit": "30"
+    }
+  }],
+  "links": [{
+    "rel": "channel",
+    "type": "x-im/channel",
+    "title": "esg",
+    "uuid": "b6142d33-e191-59c6-9c45-06772b3e922b"
+  }],
+  "content": [
+    {
+      "type": "x-im/list",
+      "uuid": "ea3de949-12d7-4bc7-b4f6-8d3708a05ce7"
+    },
+    {
+      "type": "x-im/article",
+      "uuid": "b998429c-7e72-418a-b0af-27ffb07d0dc7"
+    },
+    {
+      "type": "x-im/article",
+      "uuid": "5c82df45-73b6-4b4e-a946-4645e5e11bba"
+    },
+    {
+      "type": "x-im/article",
+      "uuid": "a07f4f5c-0814-4fa4-8c69-64feab919b3d"
+    },
+    {
+      "type": "x-im/package",
+      "uuid": "9bad1876-7b6a-474b-85d7-6996913bdd48"
+    }
+  ]
+}

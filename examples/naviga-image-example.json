@@ -1,0 +1,116 @@
+{
+    "uuid": "c382c937-8511-5d48-9677-55658c2bbb32",
+    "modified": "2015-07-01T14:11:20Z",
+    "created": "2015-07-01T14:11:20Z",
+    "status": "usable",
+    "title": "NOT NEEDED FOR IMAGE OR FILENAME?",
+    "type": "x-im/image",
+    "properties": [
+        {
+            "name": "haspublishedversion",
+            "value": "true"
+        },
+        {
+            "name": "infoSource",
+            "value": "MKT"
+        },
+        {
+            "name": "altId",
+            "value": "abcde-1234456"
+        },
+        {
+            "name": "fileName",
+            "value": "vApvJyM3pl2wpFpe0G2uBJxZfZc.jpeg"
+        }
+    ],
+    "uri": "im://image/vApvJyM3pl2wpFpe0G2uBJxZfZc.jpeg",
+    "published": "2015-07-01T14:27:00+02:00",
+    "unpublished": "2015-10-05T15:14:13+02:00",
+    "language": "sv",
+    "links": [
+        {
+            "rel": "source",
+            "type": "x-xyz/image",
+            "uri": "xyz://image/2345836363"
+        },
+        {
+            "rel": "creator",
+            "type": "x-imid/user",
+            "uri": "imid://user/sub/7d9b77a4-31fe-4da8-ac1c-8823b8b16914",
+            "title": "Imnews User",
+            "links": [{
+                "rel": "affiliation",
+                "type": "x-im/organisation",
+                "uri": "imid://organisation/naviga",
+                "title": "naviga",
+                "links": [{
+                    "rel": "affiliation",
+                    "type": "x-im/unit",
+                    "uri": "imid://unit/imnews",
+                    "title": "imnews"
+                }]
+            }]
+        },
+        {
+            "rel": "updater",
+            "type": "x-imid/user",
+            "uri": "imid://user/sub/95159231-4490-405e-a046-a31865113596",
+            "title": "Naviganews User",
+            "links": [{
+                "rel": "affiliation",
+                "type": "x-im/organisation",
+                "uri": "imid://organisation/naviga",
+                "title": "naviga",
+                "links": [{
+                    "rel": "affiliation",
+                    "type": "x-im/unit",
+                    "uri": "imid://unit/naviganews",
+                    "title": "naviganews"
+                }]
+            }]
+        },
+        {
+            "title": "Jane Doe",
+            "rel": "author",
+            "type": "x-im/author",
+            "uuid": "bad4314c-7e33-11e5-8bcf-feff819cdc9f",
+            "data": {
+                "email": "jane.doe@example.org",
+                "phone": "+465551111222",
+                "mobile": "+46777112233",
+                "streetAddress": "Street 1",
+                "postalCode": "11122",
+                "city": "Kalmar",
+                "country": "Sweden",
+                "layer2": "ads"
+            }
+        },
+        {
+            "rel": "shared-with",
+            "type": "x-imid/organisation",
+            "uri": "imid://organisation/company-x",
+            "title": "Company X",
+            "links": [{
+                "rel": "shared-with",
+                "type": "x-imid/unit",
+                "uri": "imid://organisation/newspaper-z",
+                "title": "Newspaper Z"
+            }]
+        }
+    ],
+    "meta": [{
+        "id": "46f60ada63fd",
+        "type": "x-im/image",
+        "data": {
+            "width": "1536",
+            "height": "1024",
+            "text": "Maecenas at nisl in lorem egestas egestas.",
+            "photoDateTime": "2015-07-01T14:11:20Z",
+            "credit": "Company XYZ",
+            "objectName": "nebulosa.jpg",
+            "instructions": "Only use once",
+            "source": "Mediahouse XYZ",
+            "mimeType": "image/jpeg"
+        }
+    }]
+}
