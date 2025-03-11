@@ -27,11 +27,7 @@ func WalkDocument(document *doc.Document, args []interface{}, fns ...BlockVisito
 		return err
 	}
 
-	if err := WalkBlocks(document.Links, args, fns...); err != nil {
-		return err
-	}
-
-	return nil
+	return WalkBlocks(document.Links, args, fns...)
 }
 
 // WalkBlocks For each Block in the array call the BlockVisitor functions
@@ -73,7 +69,7 @@ func WalkBlock(block doc.Block, args []interface{}, fns ...BlockVisitor) (doc.Bl
 
 // Deprecated: UUID handling in OpenContent to be case-insensitive
 // ValidateAndLowercaseDocumentUUIDs Walks each document block to validate and lowercase convert UUIDs
-func ValidateAndLowercaseDocumentUUIDs(block doc.Block, args ...interface{}) (doc.Block, error) {
+func ValidateAndLowercaseDocumentUUIDs(block doc.Block, _ ...interface{}) (doc.Block, error) {
 	err := ValidateUUID(block.UUID)
 	if err != nil {
 		return block, InvalidArgumentError{
@@ -87,7 +83,7 @@ func ValidateAndLowercaseDocumentUUIDs(block doc.Block, args ...interface{}) (do
 }
 
 // ValidateDocumentUUIDs Walks each document block to validate and lowercase convert UUIDs
-func ValidateDocumentUUIDs(block doc.Block, args ...interface{}) (doc.Block, error) {
+func ValidateDocumentUUIDs(block doc.Block, _ ...interface{}) (doc.Block, error) {
 	err := ValidateUUID(block.UUID)
 	if err != nil {
 		return block, InvalidArgumentError{

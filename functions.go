@@ -13,8 +13,9 @@ import (
 	"github.com/navigacontentlab/navigadoc/doc"
 )
 
-//go:embed schema/navigadoc-schema.json
 // NavigaDocSchema embedded schemas
+//
+//go:embed schema/navigadoc-schema.json
 var NavigaDocSchema string
 
 func CheckForEmptyBlocks(document *doc.Document) error {

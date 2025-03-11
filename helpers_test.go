@@ -2,7 +2,7 @@ package navigadoc_test
 
 import (
 	"encoding/json"
-	"io/ioutil"
+	"os"
 	"strings"
 	"testing"
 
@@ -20,7 +20,7 @@ func TestValidateDocumentUUIDs(t *testing.T) {
 	for i := range tests {
 		test := tests[i]
 		t.Run(test.xml, func(t *testing.T) {
-			testData, err := ioutil.ReadFile(test.json)
+			testData, err := os.ReadFile(test.json)
 			must(t, err, "could not open testfile")
 
 			document := &doc.Document{}

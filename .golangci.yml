@@ -9,7 +9,6 @@ linters:
   enable:
     - bodyclose
     - gosec
-    - deadcode
     - depguard
     - dogsled
     - errcheck
@@ -28,13 +27,11 @@ linters:
     - nakedret
     - rowserrcheck
     - staticcheck
-    - structcheck
     - stylecheck
     - typecheck
     - unconvert
     - unparam
     - unused
-    - varcheck
     - whitespace
 
 issues:

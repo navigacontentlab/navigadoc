@@ -25,7 +25,7 @@ type Document struct {
 	// Products is a list of products that the document should be used
 	// in.
 	//
-	// Deprecated: Do not use.
+	// Deprecated: Marked as deprecated in rpc/document.proto.
 	Products []string `json:"products,omitempty"`
 	// Created is the initial creation time of the document.
 	Created *time.Time `json:"created,omitempty"`

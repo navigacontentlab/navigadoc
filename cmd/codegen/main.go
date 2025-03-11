@@ -9,12 +9,15 @@ import (
 	"go/parser"
 	"go/printer"
 	"go/token"
-	"io/ioutil"
 	"log"
+	"os"
 	"reflect"
 	"regexp"
 	"sort"
 	"strings"
+
+	"golang.org/x/text/cases"
+	"golang.org/x/text/language"
 )
 
 type GenStruct struct {
@@ -98,8 +101,7 @@ func (g *Generator) collect(fset *token.FileSet, file *ast.File) {
 					RPCName: field.Names[0].Name,
 				}
 
-				// Ignore unexported
-				if f.RPCName != strings.Title(f.RPCName) {
+				if f.RPCName != cases.Title(language.Und, cases.NoLower).String(f.RPCName) {
 					continue
 				}
 
@@ -174,7 +176,7 @@ func (g *Generator) process() {
 	// Section were the struct and field is generated
 	for _, s := range structs {
 		// Ignore unexported
-		if s.Name != strings.Title(s.Name) {
+		if s.Name != cases.Title(language.Und, cases.NoLower).String(s.Name) {
 			continue
 		}
 
@@ -238,7 +240,7 @@ func (g *Generator) createConverters() {
 
 	for _, s := range structs {
 		// Ignore unexported
-		if s.Name != strings.Title(s.Name) {
+		if s.Name != cases.Title(language.Und, cases.NoLower).String(s.Name) {
 			continue
 		}
 
@@ -253,7 +255,7 @@ func (g *Generator) createConverters() {
 
 	for _, s := range structs {
 		// Ignore unexported
-		if s.Name != strings.Title(s.Name) {
+		if s.Name != cases.Title(language.Und, cases.NoLower).String(s.Name) {
 			continue
 		}
 
@@ -339,7 +341,7 @@ func (g *Generator) formatAndSave(out string) {
 		fmt.Println("Failed format: %w", err)
 	}
 
-	err = ioutil.WriteFile(out, result, 0600)
+	err = os.WriteFile(out, result, 0600)
 	if err != nil {
 		fmt.Println("Failed to write file %w", err)
 	}
@@ -421,7 +423,7 @@ func generateSchema(structs []GenStruct) {
 		return
 	}
 
-	err = ioutil.WriteFile("schema/navigadoc-schema.json", js, 0600)
+	err = os.WriteFile("schema/navigadoc-schema.json", js, 0600)
 	if err != nil {
 		fmt.Println("Failed to write JSON Schema file %w", err)
 	}
